@@ -14,5 +14,40 @@
     <% end %>
   </div>
 
-
 </div>
+
+<div class="container mt-3">
+      <div class="row">
+
+          <div class="col-sm-12">
+            <h2>Reviews</h2>
+            <% @reviews.each do |review| %>
+                <div class="notification">
+                    <img src='https://kitt.lewagon.com/placeholder/users/chrisgeek07' class="avatar-large"/>
+                    <div class="notification-content">
+                        <p>
+                        <% if review.rating %>
+                            <small>Rating: <% review.rating.times do %>
+                                <i class="fas fa-star"></i>
+                            <% end %>
+                            </small>
+                        <% end %>
+                        </p>
+                        <p><%= review.comment %></p>
+                    </div>
+
+                    <div class="notification-actions">
+                        <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+                    </div>
+                    <hr>
+                </div>
+            <% end %>
+          </div>
+
+          <div class="col-sm-12">
+            <h2>Add a review</h2>
+            <%= render "form-reviews" %>
+          </div>
+
+      </div>
+    </div>

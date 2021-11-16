@@ -5,14 +5,14 @@ class ReviewsController < ApplicationController
     @user = current_user.id
     @review.user_id = @user
     # @review.user_id = current_user.id
-
-    @review.save
-    redirect_to root_path
+    if @review.save
+      redirect_to root_path
+    end
   end
 
   private
 
   def review_params
-    params.require(:review).permit(:comment)
+    params.require(:review).permit(:comment, :rating)
   end
 end

@@ -4,5 +4,6 @@ class PagesController < ApplicationController
   def home
     @categories = Category.all
     @review = Review.new
+    @reviews = Review.all
   end
 end
