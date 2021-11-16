@@ -3,7 +3,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     # we need `user_id` to associate review with corresponding user
     @user = current_user.id
-    @review.user = @user
+    @review.user_id = @user
     # @review.user_id = current_user.id
     if @review.save
       redirect_to root_path
