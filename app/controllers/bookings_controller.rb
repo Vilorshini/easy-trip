@@ -25,6 +25,7 @@ class BookingsController < ApplicationController
 
 
   def edit
+
   end
 
   def update
@@ -32,6 +33,10 @@ class BookingsController < ApplicationController
   end
 
   private
+
+  def set_booking
+    @activity = Activity.find(params[:activity_id])
+  end
 
   def booking_params
     params.require(:booking).permit(:activity_id, :start_date, :end_date)
