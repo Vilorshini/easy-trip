@@ -1,5 +1,14 @@
 <%= render 'banner' %>
 <div class='container'>
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+  <h2>All Categories</h2>
+
+  <div class='row d-flex justify-content-around mb-2 align-items-center'>
+    <% @categories.each do |category| %>
+      <div class="col-12">
+        
+      </div>
+    <% end %>
+  </div>
+
+
 </div>
