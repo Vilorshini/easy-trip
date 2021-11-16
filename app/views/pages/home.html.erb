@@ -26,10 +26,12 @@
                     <img src='https://kitt.lewagon.com/placeholder/users/chrisgeek07' class="avatar-large"/>
                     <div class="notification-content">
                         <p>
-                        <small>Rating: <% review.rating.times do %>
-                            <i class="fas fa-star"></i>
+                        <% if review.rating %>
+                            <small>Rating: <% review.rating.times do %>
+                                <i class="fas fa-star"></i>
+                            <% end %>
+                            </small>
                         <% end %>
-                        </small>
                         </p>
                         <p><%= review.comment %></p>
                     </div>
