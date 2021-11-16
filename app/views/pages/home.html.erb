@@ -6,7 +6,7 @@
     <% @categories.each do |category| %>
       <div class="col-12">
         <%= link_to root_path, class: 'text-decoration-none' do %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cutewallpaper.org/21/adventure-wallpapers/Best-51-Adventure-Wallpaper-on-HipWallpaper-Dangerous-.jpg)">
+          <div class="card-category mb-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cutewallpaper.org/21/adventure-wallpapers/Best-51-Adventure-Wallpaper-on-HipWallpaper-Dangerous-.jpg)">
             <%= category.name %>
           </div>
         <% end %>
