@@ -8,9 +8,18 @@ class BookingsController < ApplicationController
   end
 
   def new
+    @booking = Booking.new
   end
 
   def create
+    @booking = Booking.create(booking_params)
+    @booking.activity = @activity
+    @booking.user = current_user
+    if @booking.save
+      redirect_to activity_booking_path(@activity, @booking)
+    else
+      render :new
+    end
   end
 
 
@@ -20,5 +29,11 @@ class BookingsController < ApplicationController
 
   def update
 
+  end
+
+  private
+
+  def booking_params
+    params.require(:booking).permit(:activity_id, :start_date, :end_date)
   end
 end
