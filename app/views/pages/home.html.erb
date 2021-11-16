@@ -20,25 +20,25 @@
       <div class="row">
 
           <div class="col-6">
-          <h2>Reviews</h2>
-          <% @reviews.each do |review|%>
-            <div class="notification">
-             <img src='https://kitt.lewagon.com/placeholder/users/chrisgeek07' class="avatar-large"/>
-              <div class="notification-content">
-                <p>
-                   <small>Rating: <% review.rating.times do %>
-                      <i class="fas fa-star"></i>
-                   <% end %>
-                   </small>
-                </p>
-                <p><%= review.comment %></p>
-              </div>
+            <h2>Reviews</h2>
+            <% @reviews.each do |review| %>
+                <div class="notification">
+                    <img src='https://kitt.lewagon.com/placeholder/users/chrisgeek07' class="avatar-large"/>
+                    <div class="notification-content">
+                        <p>
+                        <small>Rating: <% review.rating.times do %>
+                            <i class="fas fa-star"></i>
+                        <% end %>
+                        </small>
+                        </p>
+                        <p><%= review.comment %></p>
+                    </div>
 
-              <div class="notification-actions">
-                <a href="#">Delete <i class="far fa-trash-alt"></i></a>
-              </div>
-              <hr>
-            </div>
+                    <div class="notification-actions">
+                        <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+                    </div>
+                    <hr>
+                </div>
             <% end %>
           </div>
 

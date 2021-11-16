@@ -21,6 +21,11 @@
     color: #999999;
     font-weight: bold;
   }
+
+  .notification small i {
+    color : gold;
+  }
+
   .notification .notification-actions {
     opacity: 0;
     display: flex;
