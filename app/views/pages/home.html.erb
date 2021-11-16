@@ -19,7 +19,7 @@
 <div class="container mt-3">
       <div class="row">
 
-          <div class="col-6">
+          <div class="col-sm-12">
             <h2>Reviews</h2>
             <% @reviews.each do |review| %>
                 <div class="notification">
@@ -44,7 +44,7 @@
             <% end %>
           </div>
 
-          <div class="col-6">
+          <div class="col-sm-12">
             <h2>Add a review</h2>
             <%= render "form-reviews" %>
           </div>
