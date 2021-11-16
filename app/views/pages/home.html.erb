@@ -1,11 +1,11 @@
 <%= render 'banner' %>
 <div class='container'>
-  <h2>All Categories</h2>
+  <h2 class="mt-4">All Categories</h2>
 
   <div class='row d-flex justify-content-around mb-2 align-items-center'>
     <% @categories.each do |category| %>
       <div class="col-12">
-        <% link_to category_path(category), class: 'text-decoration-none' do %>
+        <%= link_to root_path, class: 'text-decoration-none' do %>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cutewallpaper.org/21/adventure-wallpapers/Best-51-Adventure-Wallpaper-on-HipWallpaper-Dangerous-.jpg)">
             <%= category.name %>
           </div>
