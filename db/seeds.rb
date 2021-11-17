@@ -56,6 +56,69 @@ puts "All activities DB have been cleaned 🥳"
 
 
 Activity.create(
+  category_id: food.id,
+  name: "Wine Tasting at Takamaka Boutique Winery",
+  address: "Vacoas, Centre",
+  description: "Your guided tour of the Takamaka Winery, the only winery in the world dedicated exclusively to lychee wine. A wine tasting session will allow you to sample a fine selection of exotic flavours and try delicious wines while learning about wine production from the owner himself.",
+  price: 900
+)
+
+Activity.create(
+  category_id: food.id,
+  name: "Wine Tasting at La Joliette",
+  address: "Petite Riviere, West",
+  description: "La Joliette Winery welcomes you for a visit where you can taste new exciting and innovative experiences in the wine industry including the Tropical Island Fruit Wines. Whether you are just having your first sips of wine or you are a seasoned sommelier, you will get a complete wine experience during your visit at La Joliette.",
+  price: 900
+)
+
+Activity.create(
+  category_id: food.id,
+  name: "Port Louis Street Food Tour",
+  address: "Port Louis",
+  description: "Your stay in Mauritius will not be complete if you miss out on street food, ranking in the world Top 10, according to The Telegraph! There are also original drinks that will refresh you and perfectly pair some of the food you will taste. There is the famous Mauritian tea, hot black tea with sugar and milk, the delicious Alouda, sweetened flavoured milk with tukmaria seeds and grated agar-agar jelly, the best are found in markets, and the various tamarind or lemongrass juices, and of course, the local beer and the limitless rum-based drinks evoking flavours of holidays!",
+  price: 1500
+)
+
+Activity.create(
+  category_id: food.id,
+  name: "Full-Day Culinary Experience with Local Chef",
+  address: "MokaWith the help of your native host, Chef Sandy, you will discover the BEST of Mauritian unique flavors and local cuisines while learning traditional ways of life. For a whole day, you will enjoy an authentic Mauritian experience.",
+  price: 2000
+)
+
+Activity.create(
+  category_id: team.id,
+  name: "Room Escape Game at Dodoquest",
+  address: "Grand Bay, North",
+  description: "The Dodoquest offers you a real situation of adventures, amusements, entertainment, and mind boggling puzzles to solve. Your family, co-workers or friends and you will enjoy an incredible adventure in Mauritius. The escape quest is inspired by unique scenarios of Mauritian colonial history and the experience offers you an extraordinary opportunity of being transfered into the past.",
+  price: 1200
+)
+
+Activity.create(
+  category_id: team.id,
+  name: "Laser Tag Game",
+  address: "Quatre Bornes, Centre",
+  description: "The laser tag game can be played indoor, outdoor or at a public loaction. It is an ideal and exciting activity for team building with friends, family and co-workers and requires team strategy.",
+  price: 900
+)
+
+Activity.create(
+  category_id: team.id,
+  name: "Treasure Hunt",
+  address: "Around the island",
+  description: "Each team consists of 4-5 people who must use brains and muscles to find the final treasure. A car will be provided to each team and the search may lead the teams to anywhere around the island. The only additional tool will be a smartphone.",
+  price: 1500
+)
+
+Activity.create(
+  category_id: team.id,
+  name: "Pirates of the East Hunt",
+  address: "East Coast",
+  description: "Pirates of the East is a fun and challenging modern pirates treasure hunt set in the lagoons of the east coast of Mauritius. Embark on a catamaran and become a ruthless and witty pirate for a day, if you survive the challenges.",
+  price: 1100
+)
+
+Activity.create(
   category_id: culture.id,
   name: "Aapravasi Ghat",
   address: "RGR3+J6J Ex-DWC Building, 1 Quay St, Port Louis",
@@ -169,7 +232,7 @@ Activity.create(
 
 Activity.create(
   category_id: sea.id,
-  name: "Windsurfing",
+  name: "Wind-surfing",
   address: "Le Morne peninsula",
   description: "Windsurfing in Mauritius is exciting as well as challenging. Besides being fun, it’s a great form of workout and can burn upto 1000 calories per hour. That’s good for a sport, right?",
   price:1000
@@ -221,85 +284,21 @@ Activity.create(
   price: 5474
 )
 
+
 Activity.create(
   category_id: eco.id,
-  name: "DISCOVER PERMACULTURE",
+  name: "Discover Permaculture",
   address: "La Croisette, MU, Chem. Vingt Pieds, Grand Baie 30517",
   description: "Discover Mauritius off the beaten track, discover sustainable development initiatives in exceptional environments, meet and share with the Mauritian population! Discover permaculture, an ethical system for developing sustainable and autonomous agriculture, and let's share in the heart of the garden, in the middle of the sugar cane fields, a meal made exclusively with garden products.",
   price: 500
 )
 
 Activity.create(
-  category_id: eco.id,
+  category_id: food.id,
   name: "Rum Tasting at Rhumerie de Chamarel",
   address: "Chamarel, South West",
   description: "Enjoy a tour and a unique rum tasting session where you can try a selection of agricultural rums produced by the distillery. Displaying a special sense of warmth and authenticity, the Rhumerie de Chamarel welcomes visitors for an all-encompassing tourism experience ranging from a guided visit of the distillery and rum tasting to a tasty meal at L'Alchimiste, its own stylish and creative restaurant.",
   price: 1200
-​)
-​
-Activity.create(
-  category_id: food.id,
-  name: "Wine Tasting at Takamaka Boutique Winery",
-  address: "Vacoas, Centre",
-  description: "Your guided tour of the Takamaka Winery, the only winery in the world dedicated exclusively to lychee wine. A wine tasting session will allow you to sample a fine selection of exotic flavours and try delicious wines while learning about wine production from the owner himself",
-  price: 1000
-)  ​
-
-Activity.create(
-  category_id: food.id,
-  name: "Wine Tasting at La Joliette",
-  address: "Petite Riviere, West",
-  description: "La Joliette Winery welcomes you for a visit where you can taste new exciting and innovative experiences in the wine industry including the Tropical Island Fruit Wines. Whether you are just having your first sips of wine or you are a seasoned sommelier, you will get a complete wine experience during your visit at La Joliette.",
-  price: 900
-)  ​
-
-Activity.create(
-  category_id: food.id,
-  name: "Port Louis Street Food Tour",
-  address: "Port Louis",
-  description: "Your stay in Mauritius will not be complete if you miss out on street food, ranking in the world Top 10, according to The Telegraph! There are also original drinks that will refresh you and perfectly pair some of the food you will taste. There is the famous Mauritian tea, hot black tea with sugar and milk, the delicious Alouda, sweetened flavoured milk with tukmaria seeds and grated agar-agar jelly, the best are found in markets, and the various tamarind or lemongrass juices, and of course, the local beer and the limitless rum-based drinks evoking flavours of holidays!",
-  price: 1500
 )
-
-Activity.create(
-  category_id: food.id,
-  name: "Full-Day Culinary Experience with Local Chef",
-  address: "Grand Bay, North",
-  description: "With the help of your native host, Chef Sandy, you will discover the BEST of Mauritian unique flavors and local cuisines while learning traditional ways of life. For a whole day, you will enjoy an authentic Mauritian experience.",
-  price: 2000
-)  ​
-
-Activity.create(
-  category_id: team.id,
-  name: "Room Escape Game at Dodoquest",
-  address: "Moka, Centre",
-  description: "The Dodoquest offers you a real situation of adventures, amusements, entertainment, and mind boggling puzzles to solve. Your family, co-workers or friends and you will enjoy an incredible adventure in Mauritius. The escape quest is inspired by unique scenarios of Mauritian colonial history and the experience offers you an extraordinary opportunity of being transfered into the past.",
-  price: 1200
-)  ​
-
-​Activity.create(
-  category_id: team.id,
-  name: "Laser Tag Game",
-  address: "Quatre Bornes, Centre",
-  description: "The laser tag game can be played indoor, outdoor or at a public loaction. It is an ideal and exciting activity for team building with friends, family and co-workers and requires team strategy.",
-  price: 900
-)
-​
-Activity.create(
-  category_id: team.id,  ​
-  name: "Treasure Hunt",
-  address: "Around the island",
-  description: "Each team consists of 4-5 people who must use brains and muscles to find the final treasure. A car will be provided to each team and the search may lead the teams to anywhere around the island. The only additional tool will be a smartphone.",
-  price: 1500
-)​
-
-Activity.create(
-  category_id: team.id,​
-  name: "Pirates of the East Hunt",
-  address: "East Coast",
-  description: "Pirates of the East is a fun and challenging modern pirates treasure hunt set in the lagoons of the east coast of Mauritius. Embark on a catamaran and become a ruthless and witty pirate for a day, if you survive the challenges.",
-  price: 1100
-)
-
 puts 'All Activities have been created successfully ! 😎'
   
