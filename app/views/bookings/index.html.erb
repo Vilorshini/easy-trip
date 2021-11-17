@@ -5,7 +5,11 @@
      <h4> Your <%= booking.activity.category.name %> Trip</h4>
        <div class="booking-details-card">
        <div class="card-icon">
-       <i class="fas fa-leaf"></i>
+       <% if booking.activity.category.name == "Culture & History" %>
+       <i class="fas fa-seedling"></i>
+       <% else %>
+       <i class="fab fa-pagelines"></i>
+       <% end %>
        </div>
 
           <div class="card-product-infos mt-2 ml-2">
@@ -23,4 +27,4 @@
     </div>
 </div>
 
-<i class="fas fa-leaf"></i>
+<i class="fab fa-pagelines"></i>

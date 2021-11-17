@@ -14,14 +14,14 @@
   object-fit: cover;
 }
 
-.booking-details-card h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
+// .booking-details-card h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
 
 .booking-details-card p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -35,4 +35,8 @@
 .booking-details-card .card-icon {
   font-size: 70px;
   margin: 0 15px;
+}
+
+.fas.fa-seedling {
+  color: olivedrab;
 }
