@@ -14,6 +14,9 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.create(booking_params)
+    @activities = Activity.where(category_id: @category)
+    @activity = @activities.sample(1)
+    raise
     @booking.activity = @activity
     @booking.user = current_user
     if @booking.save

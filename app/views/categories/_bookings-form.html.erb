@@ -1,9 +1,17 @@
-<div class='container mt-4'>
-  <h2>Please choose a date</h2>
-  <div class="md-form md-outline input-with-post-icon datepicker mt-4">
-    <input placeholder="Select date" type="date" id="example" class="form-control" style="padding: 30px 20px; font-size: 20px;">
-  </div>
-  <div class="col-auto mt-4" >
-      <button type="submit" class="btn btn-primary mb-3" style="padding: 15px 30px; font-size: 20px;">Book</button>
+<div class='container py-5 '>
+ <div class="row justify-content-center">
+    <div class="col-12">
+      <%= simple_form_for [@activity, @booking] do |f| %>
+       <h1 class="mb-4">Book an activity from this Category</h1>
+        <div class="card py-3 bg-color grey rounded-10">
+        <div class="card-body">
+          <%= f.input :start_date, as: :date, html5: true %>
+          <%= f.input :end_date, as: :date, html5: true %>
+          <%= f.submit 'Book', class: "btn btn-default btn-primary btn-md m-1" %>
+          <%= link_to "Cancel", root_path, class: 'btn btn-primary btn-md' %>
+          </div>
+        </div>
+      <% end %>
     </div>
+  </div>
 </div>
