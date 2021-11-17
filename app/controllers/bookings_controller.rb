@@ -13,6 +13,7 @@ class BookingsController < ApplicationController
   end
 
   def create
+    @category = Category.find(params[:id])
     @booking = Booking.create(booking_params)
     @activities = Activity.where(category_id: @category)
     @activity = @activities.sample(1)
