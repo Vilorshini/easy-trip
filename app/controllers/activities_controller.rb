@@ -1,5 +1,5 @@
 class ActivitiesController < ApplicationController
-  before_action :set_activity, :only [:show, :edit, :update]
+  before_action :set_activity, only: [:show, :edit, :update]
 
   def index
     @activities = Activity.all
