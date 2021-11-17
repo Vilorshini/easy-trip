@@ -27,8 +27,8 @@
           </div>
 
           <div class="booking-details-card-infos">
-            <p><span>Booked on: </span> <%= booking.activity_date %></p>
-            <p><span>Number of participant: </span> <%= (booking.number_of_participants) %></p>
+            <p><span>Booked for: </span> <%= booking.activity_date %></p>
+            <p><span>Number of participants: </span> <%= (booking.number_of_participants) %></p>
             <p><span>Total price: </span>Rs <%= ((booking.activity.price).to_i) * booking.number_of_participants.to_i %> </p>
           </div>
         </div>
