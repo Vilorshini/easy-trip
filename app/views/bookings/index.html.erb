@@ -4,11 +4,11 @@
   <% @bookings.each do |booking| %>
     <div class="container mt-4 pl-0 pr-0">
       <div class="card-all-bookings">
-        <h2><%= booking.category.name%></h2>
-        <p><span>Booked on: </span> <%= booking.start_date %></p>
-        <p><span>Number of participant: </span><%= (booking.participant.count).to_i %><p>
-        <p><span>Chosen interest: </span><%= @category.name %><p>
-        <p><span>Total price: </span>Rs<%= (activity.sum(:price).to_i)*booking.participant.count %> <p>
+        <h2> Your booking details</h2>
+        <p><span>Booked on: </span> <%= booking.activity.start_date %></p>
+        <p><span>Number of participant: </span> <%= ().to_i %></p> 
+        <p><span>Chosen interest: </span> <%=  booking.activity.category.name %></p>
+        <p><span>Total price: </span>Rs <%= (activity.sum(:price).to_i)*booking.participant.count %> </p>
       </div>
     </div>
   <%end%>
