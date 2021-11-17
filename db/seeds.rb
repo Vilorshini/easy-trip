@@ -56,7 +56,7 @@ puts "All activities DB have been cleaned 🥳"
 
 
 
-Aapravasi_Ghat = Activity.create(
+Activity.create(
   category_id: 3,
   name: "Aapravasi Ghat",
   address: "RGR3+J6J Ex-DWC Building, 1 Quay St, Port Louis",
@@ -64,7 +64,7 @@ Aapravasi_Ghat = Activity.create(
   price: 0
 )
 
-Sir_Seewoosagur_Ramgoolam_Botanical_Garden = Activity.create(
+Activity.create(
   category_id: 3,
   name: "Sir Seewoosagur Ramgoolam Botanical Garden",
   address: "VHWJ+448, Pamplemousses",
@@ -72,7 +72,7 @@ Sir_Seewoosagur_Ramgoolam_Botanical_Garden = Activity.create(
   price: 200
 )
 
-Le_Domaine_de_Saint_Aubin= Activity.create(
+Activity.create(
   category_id: 3,
   name: "Le Domaine de Saint Aubin",
   address: "Saint Aubin, Savanne Road, St Aubin",
@@ -80,7 +80,7 @@ Le_Domaine_de_Saint_Aubin= Activity.create(
   price: 200
 )
 
-L_Aventure_du_Sucre = Activity.create(
+Activity.create(
   category_id: 3,
   name: "L'Aventure du Sucre",
   address: "B18 Pamplemousses MU, Pamplemousses 21001",
@@ -88,28 +88,27 @@ L_Aventure_du_Sucre = Activity.create(
   price: 150
 )
 
-Grand_Bassin = Activity.create(
+Activity.create(
   category_id: 3,
   name: "Grand Bassin",
-  address: "",
-  description: "Located around in Port Louis, the Grand Bassin in Mauritius is one of the most sacred places for the Hindus. It is often also regarded as Ganga Talao and is famous for one of the most significant Lord Shiva temples which are located 1800 ft above the sea level. Apart from the temple of Lord Shiva, you can also worship Gods like Hanuman and Lakshmi who have their individual temples there as well. The serene and tranquil environment of the place is what makes the tourists come back again and again to this place."
+  address: "Savanne District, Mauritius",
+  description: "Located around in Port Louis, the Grand Bassin in Mauritius is one of the most sacred places for the Hindus. It is often also regarded as Ganga Talao and is famous for one of the most significant Lord Shiva temples which are located 1800 ft above the sea level. Apart from the temple of Lord Shiva, you can also worship Gods like Hanuman and Lakshmi who have their individual temples there as well. The serene and tranquil environment of the place is what makes the tourists come back again and again to this place.",
   price: 0
 )
 
-chateau-labourdonnais-mauritius = Activity.create(
+Activity.create(
   category_id: 3,
   name: "Château de Labourdonnais",
   address: "Mapou",
   description: "Another one of the buildings that exhibit hints of colonization in Mauritius is the Chateau de Labourdonnais. This is one of the best places to see in Mauritius and people can witness the grand and massive mansion which was once a residence of Christian Wiehe who lived with his family but in the present days, Chateau de Labourdonnais is a famous and heritage tourism spot. The Victorian vibes showcased by the exterior designs and internal decor makes this building a favorite among locals and tourists alike. The antique aura, vintage furniture, cobbled paths, and lush green gardens of this building takes away the breath of spectators.",
   price: 0
 )
-chateau-labourdonnais-mauritius.photo.attach(io:file14 , filename: 'chateau-labourdonnais-mauritius_otbask.jpg', content_type: 'image/jpg')
 
-Le-Craft-Market = Activity.create(
+Activity.create(
   category_id: 4,
   name: "Le Craft Market",
   address: "Port louis caudan",
-  description: "As the name suggests, this market hosts around 36 stalls which hosts some of the best and unique craft collections which also makes this one of the best Mauritius tourist places. Starting off from the exquisite woodwork to the intricately detailed baskets and also some of the most amazing glass souvenirs. Alongside that this two-storey building is also known for selling some of the most artistic things like seashells and conch items. People can also find boxes of some of the ground spices and embroidered linen catch."
+  description: "As the name suggests, this market hosts around 36 stalls which hosts some of the best and unique craft collections which also makes this one of the best Mauritius tourist places. Starting off from the exquisite woodwork to the intricately detailed baskets and also some of the most amazing glass souvenirs. Alongside that this two-storey building is also known for selling some of the most artistic things like seashells and conch items. People can also find boxes of some of the ground spices and embroidered linen catch.",
   price: 0
 )
 
