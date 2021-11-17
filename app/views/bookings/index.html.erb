@@ -1,19 +1,26 @@
 <div class="container mt-4">
   <h1> All Bookings </h1>
-
-  <% @bookings.each do |booking| %>
-    <div class="container mt-4 pl-0 pr-0">
-      <div class="card-all-bookings">
-        <h2> Your <%= booking.activity.category.name %> Trip</h2>
-        <p><span>Booked on: </span> <%= booking.activity_date %></p>
-        <p><span>Number of participant: </span> <%= (booking.number_of_participants) %></p>
-        <p><span>Chosen interest: </span> <%=  booking.activity.category.name %></p>
-        <p><span>Total price: </span>Rs <%= ((booking.activity.price).to_i) * booking.number_of_participants.to_i %> </p>
-      </div>
+    <% @bookings.each do |booking| %>
+     <div class="container mt-4 pl-0 pr-0">
+       <div class="booking-details-card">
+         <h2> Your <%= booking.activity.category.name %> Trip</h2>
+         <p><span>Booked on: </span> <%= booking.activity_date %></p>
+         <p><span>Number of participant: </span> <%= (booking.number_of_participants) %></p>
+         <p><span>Chosen interest: </span> <%=  booking.activity.category.name %></p>
+         <p><span>Total price: </span>Rs <%= ((booking.activity.price).to_i) * booking.number_of_participants.to_i %> </p>
+       </div>
     </div>
-  <%end%>
+   <%end%>
 
-  <div class="mt-4">
-    <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
+   <div class="mt-4">
+      <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
+    </div>
+</div>
+
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
   </div>
 </div>
