@@ -4,7 +4,10 @@
      <div class="container mt-4 pl-0 pr-0">
      <h4> Your <%= booking.activity.category.name %> Trip</h4>
        <div class="booking-details-card">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+       <div class="card-icon">
+       <i class="fas fa-leaf"></i>
+       </div>
+
           <div class="card-product-infos mt-2 ml-2">
 
          <p><span>Booked on: </span> <%= booking.activity_date %></p>
@@ -19,3 +22,5 @@
       <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
     </div>
 </div>
+
+<i class="fas fa-leaf"></i>
