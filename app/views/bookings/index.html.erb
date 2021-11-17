@@ -8,22 +8,21 @@
        <% booking_category = booking.activity.category.name%>
        <% case booking_category%>
        <% when "Ecology" %>
-       <i class="fas fa-utensils"></i>
+       <i class="fas fa-seedling"></i>
        <% when "Sea & Water" %>
-       <i class="fab fa-pagelines"></i>
+       <i class="fas fa-swimmer"></i>
        <% when "Culture & History" %>
-       <i class="fab fa-pagelines"></i>
+       <i class="fas fa-monument"></i>
        <% when "Arts & Crafts" %>
-       <i class="fab fa-pagelines"></i>
+       <i class="fas fa-paint-brush"></i>
        <% when "Nature & Adventure" %>
-       <i class="fab fa-pagelines"></i>
+       <i class="fas fa-tree"></i>
        <% when "Adrenaline" %>
-       <i class="fab fa-pagelines"></i>
+       <i class="fas fa-heartbeat"></i>
        <% when "Food & Drinks" %>
-       <i class="fab fa-pagelines"></i>
-       <% when "Team Activities" %>
        <i class="fas fa-utensils"></i>
-
+       <% else %>
+       <i class="fas fa-hands-helping"></i>
        <% end %>
        </div>
 
