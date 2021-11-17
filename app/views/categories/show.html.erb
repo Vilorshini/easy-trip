@@ -2,6 +2,13 @@
 <div class='container'>
   <h2 class="mt-4"> Description </h2>
   <p> <%=@category.description %> </p>
+  <%
+=begin%>
+ <% @activities.each do |activity| %>
+    <p> <%= activity.name %> </p>
+  <% end %> 
+<%
+=end%>
 </div>
 
 <%= render 'bookings-form' %>
