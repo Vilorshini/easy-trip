@@ -20,7 +20,7 @@ class BookingsController < ApplicationController
     @booking.activity = @activity.first
     @booking.user = current_user
     if @booking.save
-      redirect_to root_path
+      redirect_to bookings_path
     else
       render :new
     end
@@ -38,6 +38,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:activity_id, :start_date, :end_date)
+    params.require(:booking).permit(:activity_id, :activity_date, :number_of_participants)
   end
 end
