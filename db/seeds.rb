@@ -300,5 +300,147 @@ Activity.create(
   description: "Enjoy a tour and a unique rum tasting session where you can try a selection of agricultural rums produced by the distillery. Displaying a special sense of warmth and authenticity, the Rhumerie de Chamarel welcomes visitors for an all-encompassing tourism experience ranging from a guided visit of the distillery and rum tasting to a tasty meal at L'Alchimiste, its own stylish and creative restaurant.",
   price: 1200
 )
+
+Activity.create(
+  category_id: eco.id,
+  name: "Ebony Forest Discovery Tour",
+  address: "90409, 7 Coloured Earth Road, Chamarel, Mauritius",
+  description: "Spend the day hiking and strolling along the trails & tracks or view the splendor of the Ebony Forest while cruising in a jeep.
+  As you make your way through the forest, you will get to admire the native fauna of Mauritius, such as fruit bats, swiftlets and tropicbirds soaring high along the mountains’ ridgeline.
+  If you are a keen bird watcher, you will be able to spot the endemic birds such as the Mauritius Paradise Flycatcher, Mauritian Black Bulbul and grey-white eyes.",
+  price: 500
+)
+
+Activity.create(
+  category_id: eco.id,
+  name: "Kestrel Feeding Tour at Vallée de Ferney",
+  address: "B 28, Vieux Grand Port, Mauritius",
+  description: "The Kestrel Feeding Tour is an excellent opportunity for you to explore the Mauritian flora and fauna whilst also encountering the island’s only bird of prey, the Mauritius Kestrel. During the tour, you will also get the amazing chance to feed the bird.",
+  price: 1000
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "Ziplining at Casela Park",
+  address: "Royal Road, Cascavelle, Mauritius",
+  description: "The Zip Lines at Casela World of Adventures are ideal for anyone in search of new experiences and an adrenaline rush. Plus, you even get to discover the park aerially, with a bird’s eye view.",
+  price: 400
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Mauritius Segway Safari Trip",
+  address: "Royal Road, Cascavelle, Mauritius",
+  description: "Enjoy a 1 hour trip on a Segway at the 4,500 hectares of the Mauritius' Yemen natural reserve park, situated on the South West of Mauritius and known as the Safari of Mauritius.",
+  price: 1160
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Lion Mountain Half-Day Guided Hike",
+  address: "Grand Port, Mauritius",
+  description: "Seize the opportunity to climb Lion Mountain on a 8 km hike with a unique dip in the endemic flora of the valley. Lion Mountain, situated in the South East of the island, shall leave you amazed with the breathtaking scenery of the turquoise lagoons, as well as the islets and coast.",
+  price: 1320
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Hiking Trip - Le Pouce Mountain",
+  address: "Petit Verger, St Pierre, Mauritius",
+  description: "Le Pouce - This mountain is the third highest in Mauritius, peaking at 812m, is located in the North West of the island between the Pieter Both and the Signal mountain. Le Pouce is known as ‘The Thumb’ peak. The first person to climb Le Pouce is accredited as Charles Darwin.",
+  price: 1800
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Hiking Trip - Le Morne Brabant",
+  address: "Le Morne, Mauritius",
+  description: "Hiking on the path of the runaway slaves at Le Morne Brabant has to definitely be among the top things to do while staying in Mauritius.",
+  price: 1960
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Hiking Trip - Tamarind Falls(7 Cascades)",
+  address: "Henrietta, Mauritius",
+  description: "This half day hiking trip at the Tamarind Falls is best known as “a short and easy hike to discover the high part of the 7 waterfalls.
+  Enjoy Hiking to Tamarind Falls with its breathtaking views of mountains, rivers, forests and waterfalls, discovering a magnificent nature-paradise.",
+  price: 1970
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Hiking Trip - Chamarel Waterfall",
+  address: "Chamarel, Mauritius",
+  description: "Uncover the immaculate beauty of the island as you descend into a secret valley in the south of Mauritius and follow the unique sights and sounds of the river as you make your way to the base of the Chamarel Falls.",
+  price: 2000
+)
+
+Activity.create(
+  category_id: nature.id,
+  name: "Hiking Trip - Piton de La Petite Riviere Noire",
+  address: "B103 - Plaine Champagne Road, Mauritius",
+  description: "Hiking trip to the Piton De La petite Riviere Noire - the highest mountain in Mauritius!
+  Experience the natural beauty of Mauritius from a different perspective from the highest peak of the island.",
+  price: 2600
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "500m Zip line ",
+  address: "B102, Mare Anguilles Chamouny, Mauritius",
+  description: "Get ready for a once in a lifetime zip line adventure. Where adrenaline rush is guaranteed! It is an activity for the brave heart, as you will entwine yourself at great heights riding the zip line in the Indian Ocean of over 500m in length.",
+  price: 1650
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "Discovery Trail by Quad - Heritage Nature Reserve",
+  address: "Heritage Nature Reserve, Bel Ombre, Mauritius",
+  description: "This is a fantastic adventure trail, taking you off the beaten track to discover one of the most rejuvenating sites on the island. This package has specially been designed to meet your expectations for an amazing adventure moment!",
+  price: 1120
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "Quad Biking in the West",
+  address: "Royal Road, Cascavelle, Mauritius",
+  description: "Ideal for nature lovers and for thrill-seekers, this is an incredible opportunity to experience an adrenaline rush while discovering some of the island's flora and fauna.",
+  price: 1120
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "350m Nepalese Bridge",
+  address: "B102, Mare Anguilles Chamouny, Mauritius",
+  description: "Gear up for an adventure of a lifetime at the magnificent Vallée des Couleurs in the South of Mauritius, where you will enjoy great moments with the Nepalese Bridge along with your folks.",
+  price: 1600
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "Skydive - Tandem Skydiving",
+  address: "Airstrip, Skydive Road Z.I MU, Riviere du Rempart 30107",
+  description: "A Skydiving Adrenaline Pumping Adventure at its absolute best!
+  You will get to experience a 10,000ft skydive in Mauritius paradise island.",
+  price: 12000
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "Kite Surfing Initiation",
+  address: "Le Morne Public Beach, Mauritius",
+  description: "Are you looking to learn kitesurfing or perhaps try this great activity in one of the leading world kitesurfing destinations?
+  We offer you the best kite-surfing packages in Mauritius offered at Le Morne- a top ranked and world renowned kitesurfing spot.",
+  price: 3000
+)
+
+Activity.create(
+  category_id: adrenaline.id,
+  name: "Canyoning Excursion - Tamarind Falls(7 Cascades)",
+  address: "Henrietta, Mauritius",
+  description: "The canyoning excursion is offered at the Tamarind Falls which constitute a scenic attraction of the South West of Mauritius.
+  This is one of the most beautiful and calmest places in Mauritius, and one of the best places for nature and animal lovers, where one can find many exotic plants and birds.",
+  price: 3000
+)
 puts 'All Activities have been created successfully ! 😎'
-  
