@@ -5,8 +5,8 @@
   <div class="col-12 mt-4">
     <%= link_to category_booking_path(booking.activity.category, booking), class: 'text-decoration-none' do %>
     <div class="card-trip">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-      <div class="card-trip-details">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="card-blur" />
+      <div class="card-trip-details card-blur">
         <div>
           <h2> Activity details</h2>
           <p><span>Name: </span> <%= booking.activity.name %> </p>

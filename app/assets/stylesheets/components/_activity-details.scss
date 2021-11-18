@@ -11,7 +11,7 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
-  filter: blur(18px);
+
 }
 
 .card-trip h2 {
@@ -28,6 +28,9 @@
   color:black;
 }
 
+.card-blur{
+ filter:blur(10px);
+}
 
 .card-trip .card-trip-details {
   padding: 16px;
@@ -35,5 +38,5 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  filter:blur(6px);
+  
 }
