@@ -27,7 +27,7 @@ import "bootstrap";
 
 import { initSweetalert } from '../plugins/init_sweetalert';
 
-initSweetalert('#sweet-alert-demo', {
+initSweetalert('#book-alert', {
   title: "A nice alert",
   text: "This is a great alert, isn't it?",
   icon: "success"
