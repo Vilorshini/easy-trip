@@ -20,7 +20,7 @@ class BookingsController < ApplicationController
     @booking.activity = @activity.first
     @booking.user = current_user
     if @booking.save
-      redirect_to bookings_path
+      redirect_to category_booking_path(@activity, @booking)
     else
       render :new
     end
