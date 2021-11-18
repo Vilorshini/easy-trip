@@ -1,40 +1,46 @@
 <div class="container mt-4">
   <h1>Activities</h1>
 
-<% @bookings.each do |booking| %>
-  <div class="col-12 mt-4">
-    <% if Date.today >= (booking.activity_date - 1) %>
-      <%= link_to category_booking_path(booking.activity.category, booking), class: 'text-decoration-none' do %>
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="card-blur" />
-        <div class="card-trip-details card-blur">
-          <div>
-            <h2> Activity details</h2>
-            <p><span>Name: </span> <%= booking.activity.name %> </p>
-            <p><span>Address: </span> <%= booking.activity.address %> </p>
-            <p><span>Description: </span> <%= booking.activity.description %> </p>
-            <p><span>Price: </span> <%= booking.activity.price %> </p>
-          </div>
-        </div>
-      </div>
+  <% @bookings.each do |booking| %>
+    <div class="col-12 mt-4">
+    
+      <% if Date.today >= (booking.activity_date - 1) %>
 
-      <% else %>
+        <%= link_to category_booking_path(booking.activity.category, booking), class: 'text-decoration-none' do %>
+            <div class="card-trip">
+              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="" />
+              <div class="card-trip-details">
+                <div>
+                  <h2> Activity details</h2>
+                  <p><span>Name: </span> <%= booking.activity.name %> </p>
+                  <p><span>Address: </span> <%= booking.activity.address %> </p>
+                  <p><span>Description: </span> <%= booking.activity.description %> </p>
+                  <p><span>Price: </span> <%= booking.activity.price %> </p>
+                </div>
+              </div>
+            </div>
+        <% end %> <%# End for first Link to  %>
 
-        <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="" />
-        <div class="card-trip-details">
-          <div>
-            <h2> Activity details</h2>
-            <p><span>Name: </span> <%= booking.activity.name %> </p>
-            <p><span>Address: </span> <%= booking.activity.address %> </p>
-            <p><span>Description: </span> <%= booking.activity.description %> </p>
-            <p><span>Price: </span> <%= booking.activity.price %> </p>
-          </div>
-        </div>
-      </div>
-        
-      <% end %>
-    <% end %>
-  </div>
-<% end %>
+        <% else %>
+
+        <%= link_to category_booking_path(booking.activity.category, booking), class: 'text-decoration-none' do %>
+            <div class="card-trip">
+              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="card-blur" />
+              <div class="card-trip-details card-blur">
+                <div>
+                  <h2> Activity details</h2>
+                  <p><span>Name: </span> <%= booking.activity.name %> </p>
+                  <p><span>Address: </span> <%= booking.activity.address %> </p>
+                  <p><span>Description: </span> <%= booking.activity.description %> </p>
+                  <p><span>Price: </span> <%= booking.activity.price %> </p>
+                </div>
+              </div>
+            </div>
+        <% end %> <%# End for second Link to  %>
+
+      <% end %> <%# End for if statement %>
+
+    </div>
+    
+  <% end %>  <%# End for bookings iteration block %>
 </div>
