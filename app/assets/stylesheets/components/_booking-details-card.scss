@@ -1,6 +1,6 @@
 .booking-details-card {
   overflow: hidden;
-  height: 120px;
+  height: 140px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -25,16 +25,20 @@
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 .booking-details-card .booking-details-card-infos {
-  padding: 16px;
+  padding: 20px 0;
 }
 
 .booking-details-card .card-icon {
-  font-size: 70px;
-  margin: 0 25px;
+  font-size: 50px;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .fas.fa-seedling {
