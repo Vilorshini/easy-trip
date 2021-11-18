@@ -37,15 +37,15 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  initSweetalert('#book-alert', {
+  initSweetalert('#booking-link', {
   title: "Congratulations!",
   text: "Your activity has been booked successfully!",
-  button: "Let's Go!",
-  timer: 9000,
+  // button: "Let's Go!",
+  timer: 10000,
   icon: "success"
     }, (value) => {
       if (value) {
-        const link = document.querySelector('#booking-link');
+        const link = document.querySelector('#book-alert');
         link.click();
       }
     });
