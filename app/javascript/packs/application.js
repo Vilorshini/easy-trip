@@ -25,6 +25,14 @@ require("channels")
 // External imports
 import "bootstrap";
 
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSweetalert('#sweet-alert-demo', {
+  title: "A nice alert",
+  text: "This is a great alert, isn't it?",
+  icon: "success"
+});
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
