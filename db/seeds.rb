@@ -5,7 +5,7 @@ Category.destroy_all
 
 puts "All categories DB have been cleaned 🥳"
 
-cat1 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224665/development/eco_pjth8o.jpg')
+cat1 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637229346/development/kestrel_nthfj1.jpg')
 cat2 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224724/development/sea_s3aiul.jpg')
 cat3 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224664/development/culture_gspusu.jpg')
 cat4 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224661/development/art_rzkvsy.jpg')
@@ -18,7 +18,7 @@ eco = Category.create(
     name: 'Ecology',
     description: 'This category is about Ecology'
 )
-eco.photo.attach(io: cat1, filename: 'eco_pjth8o.jpg', content_type: 'image/jpg')
+eco.photo.attach(io: cat1, filename: 'kestrel_nthfj1.jpg', content_type: 'image/jpg')
 
 sea = Category.create(
     name: 'Sea & Water',
