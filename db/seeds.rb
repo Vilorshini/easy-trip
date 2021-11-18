@@ -1,4 +1,4 @@
-
+Booking.destroy_all
 Activity.destroy_all
 puts "Cleaning all categories 😴"
 Category.destroy_all
