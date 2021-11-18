@@ -25,10 +25,29 @@ require("channels")
 // External imports
 import "bootstrap";
 
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+
+
+
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  initSweetalert('#booking-link', {
+  title: "Congratulations!",
+  text: "Your activity has been booked successfully!",
+  // button: "Let's Go!",
+  timer: 10000,
+  icon: "success"
+    }, (value) => {
+      if (value) {
+        const link = document.querySelector('#book-alert');
+        link.click();
+      }
+    });
+    
 });
