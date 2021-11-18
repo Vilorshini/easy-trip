@@ -1,3 +1,23 @@
 <div class="container mt-4">
-  <h1> Your Bookings </h1>
+  <h1>Activities</h1>
+
+<% @bookings.each do |booking| %>
+
+
+<div class="card-trip">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <div class="card-trip-details">
+    <div>
+      <h2> Activity details</h2>
+      <p><span>Name: </span> <%= booking.activity.name %> </p>
+      <p><span>Address: </span> <%= booking.activity.address %> </p>
+      <p><span>Description: </span> <%= booking.activity.description %> </p>
+      <p><span>Price: </span> <%= booking.activity.price %> </p>
+    </div>
+  </div>
+</div>
+
+<% end %>
+
+
 </div>
