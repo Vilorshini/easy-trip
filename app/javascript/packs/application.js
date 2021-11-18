@@ -27,11 +27,7 @@ import "bootstrap";
 
 import { initSweetalert } from '../plugins/init_sweetalert';
 
-initSweetalert('#book-alert', {
-  title: "A nice alert",
-  text: "This is a great alert, isn't it?",
-  icon: "success"
-});
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -39,4 +35,12 @@ initSweetalert('#book-alert', {
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+    initSweetalert('#sweet-alert-demo', {
+      title: "Congratulations!",
+      text: "Your booking was succesfull!",
+      icon: "success"
+    }, (value) => {
+      console.log(value);
+    });
+
 });
