@@ -29,18 +29,25 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 
 
 
+
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-    initSweetalert('#sweet-alert-demo', {
-      title: "Congratulations!",
-      text: "Your booking was succesfull!",
-      icon: "success"
+  initSweetalert('#book-alert', {
+  title: "Congratulations!",
+  text: "Your activity has been booked successfully!",
+  button: "Let's Go!",
+  timer: 9000,
+  icon: "success"
     }, (value) => {
-      console.log(value);
+      if (value) {
+        const link = document.querySelector('#booking-link');
+        link.click();
+      }
     });
-
+    
 });
