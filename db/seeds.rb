@@ -5,45 +5,62 @@ Category.destroy_all
 
 puts "All categories DB have been cleaned 🥳"
 
+cat1 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224665/development/eco_pjth8o.jpg')
+cat2 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224724/development/sea_s3aiul.jpg')
+cat3 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224664/development/culture_gspusu.jpg')
+cat4 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224661/development/art_rzkvsy.jpg')
+cat5 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224715/development/nature_clnkai.jpg')
+cat6 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224693/development/adrenaline_t7lhoy.jpg')
+cat7 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224662/development/food_cgwxhw.jpg')
+cat8 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224666/development/team_rkydyp.jpg')
+
 eco = Category.create(
     name: 'Ecology',
     description: 'This category is about Ecology'
 )
+eco.photo.attach(io: cat1, filename: 'eco_pjth8o.jpg', content_type: 'image/jpg')
 
 sea = Category.create(
     name: 'Sea & Water',
     description: 'This category is about Sea & Water'
 )
+sea.photo.attach(io: cat2, filename: 'sea_s3aiul.jpg', content_type: 'image/jpg')
 
 culture = Category.create(
     name: 'Culture & History',
     description: 'This category is about Culture & History'
 )
+culture.photo.attach(io: cat3, filename: 'culture_gspusu.jpg', content_type: 'image/jpg')
 
 arts = Category.create(
     name: 'Arts & Crafts',
     description: 'This category is about Arts & Crafts'
 )
+arts.photo.attach(io: cat4, filename: 'art_rzkvsy.jpg', content_type: 'image/jpg')
 
 nature = Category.create(
     name: 'Nature & Adventure',
     description: 'This category is about Nature & Adventure'
 )
+nature.photo.attach(io: cat5, filename: 'nature_clnkai.jpg', content_type: 'image/jpg')
 
 adrenaline = Category.create(
     name: 'Adrenaline',
     description: 'This category is about Adrenaline'
 )
+adrenaline.photo.attach(io: cat6, filename: 'adrenaline_t7lhoy.jpg', content_type: 'image/jpg')
 
 food = Category.create(
     name: 'Food & Drinks',
     description: 'This category is about Food & Drinks'
 )
+food.photo.attach(io: cat7, filename: 'food_cgwxhw.jpg', content_type: 'image/jpg')
 
 team = Category.create(
     name: 'Team Activities',
     description: 'This category is about Team Activities'
 )
+team.photo.attach(io: cat8, filename: 'team_rkydyp.jpg', content_type: 'image/jpg')
 
 puts 'All Categories have been created successfully ! 😎'
 
