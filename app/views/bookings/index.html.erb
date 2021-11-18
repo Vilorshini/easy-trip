@@ -2,22 +2,21 @@
   <h1>Activities</h1>
 
 <% @bookings.each do |booking| %>
-
-
-<div class="card-trip">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  <div class="card-trip-details">
-    <div>
-      <h2> Activity details</h2>
-      <p><span>Name: </span> <%= booking.activity.name %> </p>
-      <p><span>Address: </span> <%= booking.activity.address %> </p>
-      <p><span>Description: </span> <%= booking.activity.description %> </p>
-      <p><span>Price: </span> <%= booking.activity.price %> </p>
+  <div class="col-12 mt-4">
+    <%= link_to category_booking_path(booking.activity.category, booking), class: 'text-decoration-none' do %>
+    <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-details">
+        <div>
+          <h2> Activity details</h2>
+          <p><span>Name: </span> <%= booking.activity.name %> </p>
+          <p><span>Address: </span> <%= booking.activity.address %> </p>
+          <p><span>Description: </span> <%= booking.activity.description %> </p>
+          <p><span>Price: </span> <%= booking.activity.price %> </p>
+        </div>
+      </div>
     </div>
+    <% end %>
   </div>
-</div>
-
 <% end %>
-
-
 </div>
