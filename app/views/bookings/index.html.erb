@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <h1> Your Bookings </h1>
     <% @bookings.each do |booking| %>
-      <div class="container mt-5 pl-0 pr-0">
+      <div class="container mt-4 pl-0 pr-0">
         <h4> Your <%= booking.activity.category.name %> Trip</h4>
         <div class="booking-details-card">
           <div class="card-icon">
@@ -35,7 +35,7 @@
       </div>
    <%end%>
 
-   <div class=" container mt-5">
+   <div class=" container mt-4 pl-0">
       <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
   </div>
 </div>
