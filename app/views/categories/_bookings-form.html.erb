@@ -7,7 +7,7 @@
         <div class="card-body">
           <%= f.input :activity_date, as: :date, html5: true %>
           <%= f.input :number_of_participants %>
-          <%= f.submit 'Book', class: "btn btn-default btn-primary btn-md m-1" %>
+          <%= f.submit 'Book', input_html: { id: "book-alert" }. class: "btn btn-default btn-primary btn-md m-1" %>
           <%= link_to "Cancel", root_path, class: 'btn btn-primary btn-md' %>
           </div>
         </div>
