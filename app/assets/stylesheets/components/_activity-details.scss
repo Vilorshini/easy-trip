@@ -4,7 +4,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 20px;
   border-radius: 10px;
-
+  position: relative;
 }
 
 .card-trip > img {
@@ -38,5 +38,18 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  
+}
+
+span i {
+  font-size: 100px;
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  // filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
 }
