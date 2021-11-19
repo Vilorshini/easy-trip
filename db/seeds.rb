@@ -16,49 +16,50 @@ cat8 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224666/d
 
 eco = Category.create(
     name: 'Ecology',
-    description: 'This category is about Ecology'
+    description: 'Discover Eco-friendly activities offered where you can participate and learn about our flora and fauna.'
 )
 eco.photo.attach(io: cat1, filename: 'kestrel_nthfj1.jpg', content_type: 'image/jpg')
 
 sea = Category.create(
     name: 'Sea & Water',
-    description: 'This category is about Sea & Water'
+    description: 'Book now and discover the best of our Mauritian waters. Sea, waterfall or lake? It could be any water-related activity.'
 )
 sea.photo.attach(io: cat2, filename: 'sea_s3aiul.jpg', content_type: 'image/jpg')
 
 culture = Category.create(
     name: 'Culture & History',
-    description: 'This category is about Culture & History'
+    description: 'A treat for the history lovers, if want to go into the depths of the country! Book now if you want an alluring view of the culture and history of Mauritius.
+    '
 )
 culture.photo.attach(io: cat3, filename: 'culture_gspusu.jpg', content_type: 'image/jpg')
 
 arts = Category.create(
     name: 'Arts & Crafts',
-    description: 'This category is about Arts & Crafts'
+    description: 'If you want to have an enriching experience with a range of historical, exotic and contemporary works by talented artists.'
 )
 arts.photo.attach(io: cat4, filename: 'art_rzkvsy.jpg', content_type: 'image/jpg')
 
 nature = Category.create(
     name: 'Nature & Adventure',
-    description: 'This category is about Nature & Adventure'
+    description: 'The rich flora and fauna of Mauritius will blow your mind away. Discover fun activities to get you outside and exploring nature, perfect for nature lovers, on your own, with friends or with family.'
 )
 nature.photo.attach(io: cat5, filename: 'nature_clnkai.jpg', content_type: 'image/jpg')
 
 adrenaline = Category.create(
     name: 'Adrenaline',
-    description: 'This category is about Adrenaline'
+    description: 'Need a good dose of adrenaline? Whether you’re a thrill-seeker or looking to step out of your comfort zone. You’ve come to the right place!'
 )
 adrenaline.photo.attach(io: cat6, filename: 'adrenaline_t7lhoy.jpg', content_type: 'image/jpg')
 
 food = Category.create(
     name: 'Food & Drinks',
-    description: 'This category is about Food & Drinks'
+    description: 'Mauritian cuisine is one of the most unique fusions of flavors in the world. Book now if you wish to discover and immerse yourself in the richness of its gastronomy. Incorporating Indian, French, Chinese, and African influences.'
 )
 food.photo.attach(io: cat7, filename: 'food_cgwxhw.jpg', content_type: 'image/jpg')
 
 team = Category.create(
     name: 'Team Activities',
-    description: 'This category is about Team Activities'
+    description: 'You want some fun with your friends or family?! Book now and experience some amazing emotional adventures with them!'
 )
 team.photo.attach(io: cat8, filename: 'team_rkydyp.jpg', content_type: 'image/jpg')
 
