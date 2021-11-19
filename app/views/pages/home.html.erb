@@ -1,6 +1,6 @@
 <%= render 'banner' %>
 <div class='container'>
-  <h2 class="mt-4">All Categories</h2>
+  <h2 class="my-4">All Categories</h2>
 
   <div class='row d-flex justify-content-between align-items-center cat-wrapper'>
     <% @categories.each do |category| %>
@@ -14,6 +14,14 @@
     <% end %>
   </div>
 
+</div>
+
+<div class='container py-4'>
+  
+  <div class="show-card">
+    <h3 class="">Not sure which activity to pick?</h3>
+    <%= link_to "Learn more", about_path, class: 'btn btn-flat my-3'  %>
+  </div>
 </div>
 
 <div class="container mt-3">
@@ -44,10 +52,10 @@
             <% end %>
           </div>
 
-          <div class="col-sm-12">
-            <h2>Add a review</h2>
+          <div class="review-card col-sm-12 my-4">
+            <h3>Add a review</h3>
             <%= render "form-reviews" %>
           </div>
 
       </div>
-    </div>
+</div>
