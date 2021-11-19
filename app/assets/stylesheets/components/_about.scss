@@ -1,0 +1,44 @@
+.banner {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position-x: right;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.about-section {
+  padding: 50px;
+  background-color: grey;
+  color: white;
+}
+
+.about-section p {
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
