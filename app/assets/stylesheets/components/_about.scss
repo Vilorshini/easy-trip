@@ -4,6 +4,7 @@
   background-size: cover;
   background-position-x: right;
   padding: 150px 0;
+  border-radius: 0 0 30px 30px;
 }
 
 .banner h1 {
@@ -22,9 +23,11 @@
 }
 
 .about-section {
-  padding: 50px;
+  padding: 30px;
   background-color: grey;
   color: white;
+  margin: 30px 10px 0px 10px;
+  border-radius: 30px 30px 0 0;
 }
 
 .about-section p {
@@ -33,7 +36,7 @@
 
 .links {
   display: flex;
-  margin-left: 70px;
+  justify-content: center;
   margin-top: 30px;
 }
 .links a {
