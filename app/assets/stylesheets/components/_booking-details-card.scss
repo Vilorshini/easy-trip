@@ -32,6 +32,10 @@
   padding: 20px 0;
 }
 
+.booking-details-card .booking-details-card-infos span {
+  font-weight: bold;
+}
+
 .booking-details-card .card-icon {
   font-size: 50px;
   width: 60px;
@@ -41,34 +45,34 @@
   justify-content: center;
 }
 
-i.fa-seedling {
+.card-icon .fa-seedling {
   color: $green;
 }
 
-i.fa-swimmer {
+.card-icon .fa-swimmer {
   color: $blue;
 }
 
-i.fa-monument {
+.card-icon .fa-monument {
   color: $brown;
 }
 
-i.fa-palette {
-  color: $blue;
+.card-icon .fa-palette {
+  color: $red;
 }
 
-i.fa-hiking {
-  color: $green;
+.card-icon .fa-hiking {
+  color: $dark-green;
 }
 
-i.fa-running {
+.card-icon .fa-running {
   color: $orange;
 }
 
-i.fa-utensils {
-  color: $blue;
+.card-icon .fa-utensils {
+  color: $yellow;
 }
 
-i.fa-hands-helping {
-  color: $orange;
+.card-icon .fa-users {
+  color: $gray;
 }
