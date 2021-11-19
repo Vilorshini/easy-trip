@@ -18,15 +18,27 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
-  color: black;
+  color: #1a1a1a;
 }
 
 .card-trip p {
   font-size: 14px;
   opacity: .7;
   margin: 0;
-  color:black;
+  color:#1a1a1a;
 }
+
+// :nth-child(3)
+
+.card-trip p {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-width: 60ch;
+  max-height: 4.8em;
+  line-height: 1.6em;
+}
+
 
 .card-blur{
  filter: blur(3px);
@@ -38,6 +50,10 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+}
+
+.card-trip .card-trip-details span {
+  font-weight: 700;
 }
 
 span i {
