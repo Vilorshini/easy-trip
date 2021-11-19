@@ -4,7 +4,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 20px;
   border-radius: 10px;
-
+  position: relative;
 }
 
 .card-trip > img {
@@ -18,18 +18,30 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
-  color: black;
+  color: #1a1a1a;
 }
 
 .card-trip p {
   font-size: 14px;
   opacity: .7;
   margin: 0;
-  color:black;
+  color:#1a1a1a;
 }
 
+// :nth-child(3)
+
+.card-trip p {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-width: 60ch;
+  max-height: 6.2em;
+  line-height: 1.6em;
+}
+
+
 .card-blur{
- filter:blur(10px);
+ filter: blur(3px);
 }
 
 .card-trip .card-trip-details {
@@ -38,5 +50,22 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  
+}
+
+.card-trip .card-trip-details span {
+  font-weight: 700;
+}
+
+span i {
+  font-size: 100px;
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  filter: drop-shadow(1px 1px 2px rgb(83, 83, 83 / 0.9));
 }
