@@ -1,9 +1,16 @@
-Booking.destroy_all
-Activity.destroy_all
-puts "Cleaning all categories 😴"
-Category.destroy_all
+puts "Now cleaning all bookings 😴"
+  Booking.destroy_all
+puts "All bookings DB have been cleaned 🥳"
 
+puts "Cleaning all activities 😴"
+  Activity.destroy_all
+puts "All activities DB have been cleaned 🥳"
+
+puts "Cleaning all categories 😴"
+  Category.destroy_all
 puts "All categories DB have been cleaned 🥳"
+
+# Category cloudinary images links
 
 cat1 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637229346/development/kestrel_nthfj1.jpg')
 cat2 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224724/development/sea_s3aiul.jpg')
@@ -13,6 +20,9 @@ cat5 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224715/d
 cat6 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224693/development/adrenaline_t7lhoy.jpg')
 cat7 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224662/development/food_cgwxhw.jpg')
 cat8 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224666/development/team_rkydyp.jpg')
+
+
+puts "Now creating all categories..."
 
 eco = Category.create(
     name: 'Ecology',
@@ -66,12 +76,9 @@ team.photo.attach(io: cat8, filename: 'team_rkydyp.jpg', content_type: 'image/jp
 puts 'All Categories have been created successfully ! 😎'
 
 
+# Category cloudinary images links
 
-puts "Cleaning all activities 😴"
-
-puts "All activities DB have been cleaned 🥳"
-
-
+puts "Now creating all activities..."
 
 Activity.create(
   category_id: food.id,
@@ -461,4 +468,6 @@ Activity.create(
   This is one of the most beautiful and calmest places in Mauritius, and one of the best places for nature and animal lovers, where one can find many exotic plants and birds.",
   price: 3000
 )
+
+
 puts 'All Activities have been created successfully ! 😎'
