@@ -78,9 +78,61 @@ puts 'All Categories have been created successfully ! 😎'
 
 # Category cloudinary images links
 
+act1 = URI.open('')
+act2 = URI.open('')
+act3 = URI.open('')
+act4 = URI.open('')
+act5 = URI.open('')
+act6 = URI.open('')
+act7 = URI.open('')
+act8 = URI.open('')
+act9 = URI.open('')
+act10 = URI.open('')
+act11 = URI.open('')
+act12 = URI.open('')
+act13 = URI.open('')
+act14 = URI.open('')
+act15 = URI.open('')
+act16 = URI.open('')
+act17 = URI.open('')
+act18 = URI.open('')
+act19 = URI.open('')
+act20 = URI.open('')
+act21 = URI.open('')
+act22 = URI.open('')
+act23 = URI.open('')
+act24 = URI.open('')
+act25 = URI.open('')
+act26 = URI.open('')
+act27 = URI.open('')
+act28 = URI.open('')
+act29 = URI.open('')
+act30 = URI.open('')
+act31 = URI.open('')
+act32 = URI.open('')
+act33 = URI.open('')
+act34 = URI.open('')
+act35 = URI.open('')
+act36 = URI.open('')
+act37 = URI.open('')
+act38 = URI.open('')
+act39 = URI.open('')
+act40 = URI.open('')
+act41 = URI.open('')
+act42 = URI.open('')
+act43 = URI.open('')
+act44 = URI.open('')
+act45 = URI.open('')
+act46 = URI.open('')
+act47 = URI.open('')
+act48 = URI.open('')
+act50 = URI.open('')
+
+
+
 puts "Now creating all activities..."
 
-Activity.create(
+takamaka = Activity.create(
   category_id: food.id,
   name: "Wine Tasting at Takamaka Boutique Winery",
   address: "Vacoas, Centre",
