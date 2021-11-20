@@ -570,4 +570,4 @@ canyon = Activity.create(
 )
 canyon.photo.attach(io: act48, filename: '', content_type: 'image/jpg')
 
-puts 'All Activities have been created successfully ! 😎'
+puts 'I know it was quite long this time, but all activities have been created successfully ! 😎'
