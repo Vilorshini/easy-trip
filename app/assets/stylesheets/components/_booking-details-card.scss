@@ -45,6 +45,28 @@
   justify-content: center;
 }
 
+.book-head {
+  border-radius: 30px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.book-head h4 {
+  font-size: 16px;
+  margin: 0;
+  margin-right: 20%;
+}
+
+
+.back-btn {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
 
 .card-icon .fa-seedling {
   color: $green;
