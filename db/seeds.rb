@@ -571,4 +571,13 @@ canyon = Activity.create(
 )
 canyon.photo.attach(io: act48, filename: '', content_type: 'image/jpg')
 
+tea = Activity.create(
+  category_id: food.id,
+  name: "Tea Tasting at Bois Cheri",
+  address: "Bois Cheri Tea Factory, Bois Cheri Road, Bois Cheri",
+  description: "Awaken your five senses as you discover the making of teas and as you stroll down the exotic gardens of the Bois Cheri tea plantation. After a guided tour, you will taste the range of flavored, green and herbal teas produced at the Bois Cheri factory while enjoying a great panoramic view of the beautiful south of the island.",
+  price: 1000
+)
+tea.photo.attach(io: act49, filename: '', content_type: 'image/jpg')
+
 puts 'I know it was quite long this time, but all activities have been created successfully ! 😎'
