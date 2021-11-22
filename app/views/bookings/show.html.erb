@@ -28,7 +28,7 @@
             <% end %>
           </div>
 
-          <div class="booking-details-card-infos">
+          <div class="booking-details-card-infos" id="activity" data-activity="<%= @booking.activity_date %>">
             <p><span>Booked for: </span> <%= @booking.activity_date %></p>
             <p><span>Number of participants: </span> <%= (@booking.number_of_participants) %></p>
             <p><span>Total price: </span>Rs <%= ((@booking.activity.price).to_i) * @booking.number_of_participants.to_i %> </p>
@@ -50,7 +50,11 @@
 
     <div id="map"
       style="width: 100%; height: 100vh;"
-      data-markers="<%= @markers.to_json %>"
+
+      <% if Date.today >= (@booking.activity_date - 1) %>
+       data-markers="<%= @markers.to_json %>"
+      <% end %>
+
       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
 </div>

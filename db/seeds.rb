@@ -139,7 +139,7 @@ takamaka = Activity.create(
   description: "Your guided tour of the Takamaka Winery, the only winery in the world dedicated exclusively to lychee wine. A wine tasting session will allow you to sample a fine selection of exotic flavours and try delicious wines while learning about wine production from the owner himself.",
   price: 900
 )
-.photo.attach(io: act1, filename: '', content_type: 'image/jpg')
+takamaka.photo.attach(io: act1, filename: '', content_type: 'image/jpg')
 
 joliette = Activity.create(
   category_id: food.id,
