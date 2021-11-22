@@ -13,7 +13,6 @@ const initMapbox = () => {
 
 
     const markers = JSON.parse(mapElement.dataset.markers);
-    console.log(markers);
     markers.forEach((marker) => {
       new mapboxgl.Marker()
         .setLngLat([ marker.lng, marker.lat ])
