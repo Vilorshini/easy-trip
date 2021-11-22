@@ -387,7 +387,7 @@ aigrettes.photo.attach(io: act28, filename: '', content_type: 'image/jpg')
 exotic = Activity.create(
   category_id: eco.id,
   name: "Exotic South: A Journey into the Nature",
-  address: "La Croisette, Grand Bay",
+  address: "La Croisette, MU, Chem. Vingt Pieds, Grand Baie 30517",
   description: "In this tour, you will explore the exotic south-west of Mauritius on this 8 hours Nature tour. With your certified guide, you will be able to visit some of the highlights and beautiful places of the South-West of the paradise island.",
   price: 5474
 )
