@@ -208,7 +208,7 @@ aapravasi = Activity.create(
   category_id: culture.id,
   name: "Aapravasi Ghat",
   address: "RGR3+J6J Ex-DWC Building, 1 Quay Street, Port Louis",
-  description: "Earning itself a spot in the list of UNESCO World Heritage Sites.In the present time, Aapravasi Ghat is proof to this major history of indentured labor that took place during British Rule.",
+  description: "Earning itself a spot in the list of UNESCO World Heritage Sites, Aapravasi Ghat is proof to this major history of indentured labor that took place during the British Rule.",
   price: 0
 )
 aapravasi.photo.attach(io: act9, filename: '', content_type: 'image/jpg')
@@ -217,7 +217,7 @@ botanic = Activity.create(
   category_id: culture.id,
   name: "Sir Seewoosagur Ramgoolam Botanical Garden",
   address: "VHWJ+448, Pamplemousses",
-  description: "If plants and greenery and nature is one of your strong point of interests, the Mauritius National Botanical Garden is an absolute must-visit while you are in Mauritius. Spread over a vast area, the Mauritius National Botanical Garden is home to over 650 variants of plants in total. The garden also does hold a bit of historical importance as it was opened by a French governor back in the days and was a private garden before. It is considered to be one of the most amazing places to go in Mauritius.",
+  description: "If plants, greenery and nature are your strong points of interests, the Mauritius National Botanical Garden is an absolute must-visit while you are in Mauritius. Spread over a vast area, the garden is home to over 650 variants of plants in total. The garden also holds a bit of historical importance as it was opened by a French governor back in the days and was a private garden. It is considered to be one of the most amazing places to go in Mauritius.",
   price: 200
 )
 botanic.photo.attach(io: act10, filename: '', content_type: 'image/jpg')
@@ -225,7 +225,7 @@ botanic.photo.attach(io: act10, filename: '', content_type: 'image/jpg')
 aubin = Activity.create(
   category_id: culture.id,
   name: "Le Domaine de Saint Aubin",
-  address: "Saint Aubin, Savanne Road, St Aubin",
+  address: "Le Domaine de Saint Aubin, Saint Aubin, Savanne Road, St Aubin",
   description: "One of the best historical places in Mauritius, the plantation of St. Aubin goes back almost two hundred years. The factory was shifted in the seventies and the estate no longer deals in sugar. However, the lawns of this huge house are now home to a rum distillery. There is a vanilla house, spice garden, the tropical garden here as well. This sugar estate dates from the beginning of the 19th century, when the roads were not very practicable and the sugar had to be transported to the capital of the island by means of the sailboats of the Souillac batelage.",
   price: 200
 )
@@ -234,8 +234,8 @@ aubin.photo.attach(io: act11, filename: '', content_type: 'image/jpg')
 av_sucre = Activity.create(
   category_id: culture.id,
   name: "L'Aventure du Sucre",
-  address: "B18 Pamplemousses MU, Pamplemousses 21001",
-  description: "And just when you thought places to visit in Mauritius got boring, the Sugar museum amuses you as a destination for sightseeing in Mauritius. It dates back to the time when sugar was given equal importance as gold. It is a treat for historians as it",
+  address: "L'Aventure du Sucre, B18 Pamplemousses MU, Pamplemousses 21001",
+  description: "And just when you thought places to visit in Mauritius got boring, the Sugar museum amuses you as a destination for sightseeing in Mauritius. It dates back to the time when sugar was given equal importance as gold. It is a treat for historians!",
   price: 150
 )
 av_sucre.photo.attach(io: act12, filename: '', content_type: 'image/jpg')
@@ -243,8 +243,8 @@ av_sucre.photo.attach(io: act12, filename: '', content_type: 'image/jpg')
 grandbassin = Activity.create(
   category_id: culture.id,
   name: "Grand Bassin",
-  address: "Savanne District, Mauritius",
-  description: "Located around in Port Louis, the Grand Bassin in Mauritius is one of the most sacred places for the Hindus. It is often also regarded as Ganga Talao and is famous for one of the most significant Lord Shiva temples which are located 1800 ft above the sea level. Apart from the temple of Lord Shiva, you can also worship Gods like Hanuman and Lakshmi who have their individual temples there as well. The serene and tranquil environment of the place is what makes the tourists come back again and again to this place.",
+  address: "HFJR+QMX, Grand Bassin",
+  description: "The Grand Bassin is one of the most sacred places for the Hindus in Mauritius. It is often also regarded as Ganga Talao and is famous for one of the most significant Lord Shiva temples which are located 1800 ft above the sea level. Apart from the temple of Lord Shiva, you can also worship Gods like Hanuman and Lakshmi who have their individual temples there as well. The serene and tranquil environment of the place is what makes the tourists come back again and again.",
   price: 0
 )
 grandbassin.photo.attach(io: act13, filename: '', content_type: 'image/jpg')
@@ -252,7 +252,7 @@ grandbassin.photo.attach(io: act13, filename: '', content_type: 'image/jpg')
 chateau = Activity.create(
   category_id: culture.id,
   name: "Château de Labourdonnais",
-  address: "Mapou",
+  address: "Château de Labourdonnais, Mapou",
   description: "Another one of the buildings that exhibit hints of colonization in Mauritius is the Chateau de Labourdonnais. This is one of the best places to see in Mauritius and people can witness the grand and massive mansion which was once a residence of Christian Wiehe who lived with his family but in the present days, Chateau de Labourdonnais is a famous and heritage tourism spot. The Victorian vibes showcased by the exterior designs and internal decor makes this building a favorite among locals and tourists alike. The antique aura, vintage furniture, cobbled paths, and lush green gardens of this building takes away the breath of spectators.",
   price: 0
 )
@@ -306,7 +306,7 @@ eureka.photo.attach(io: act19, filename: '', content_type: 'image/jpg')
 parasail = Activity.create(
   category_id: sea.id,
   name: "Parasailing",
-  address: "Grand Baie, Trou d’eau Douce, and Ile aux Cerfs",
+  address: "Grand Bay Public Beach",
   description: "Parasailing is one of the best water sports in Mauritius. It not just gives you a bird’s-eye view of the lagoons, but also an unmatched thrill. This is the best place to lose yourself in the magnificent turquoise waters and their vastness.",
   price: 250
 )
@@ -324,7 +324,7 @@ kayak.photo.attach(io: act21, filename: '', content_type: 'image/jpg')
 water_ski = Activity.create(
   category_id: sea.id,
   name: "Water Skiing",
-  address: "B59, Trou d’eau Douce",
+  address: "B59, Trou d’Eau Douce",
   description: "Water skiing in Mauritius is a wonderful sport to get an adrenaline rush. This high-octane sport seems a tad difficult at first, but soon it becomes a smooth sail. All you need to do is skim along the water’s surface, standing upright on skis holding a tow rope. Water-ski is best enjoyed where the water is calm. This water sport will need you to use a lot of energy, so keep your energy drinks handy.",
   price: 1500
 )
@@ -387,7 +387,7 @@ aigrettes.photo.attach(io: act28, filename: '', content_type: 'image/jpg')
 exotic = Activity.create(
   category_id: eco.id,
   name: "Exotic South: A Journey into the Nature",
-  address: "Blue Bay NCG Road",
+  address: "Blue Bay NCG Road, Blue Bay",
   description: "In this tour, you will explore the exotic south-west of Mauritius on this 8 hours Nature tour. With your certified guide, you will be able to visit some of the highlights and beautiful places of the South-West of the paradise island.",
   price: 5474
 )
@@ -452,7 +452,7 @@ segway.photo.attach(io: act35, filename: '', content_type: 'image/jpg')
 lion = Activity.create(
   category_id: nature.id,
   name: "Lion Mountain Half-Day Guided Hike",
-  address: "Grand Port, Mauritius",
+  address: "JPMF+RQ Vieux Grand Port",
   description: "Seize the opportunity to climb Lion Mountain on a 8 km hike with a unique dip in the endemic flora of the valley. Lion Mountain, situated in the South East of the island, shall leave you amazed with the breathtaking scenery of the turquoise lagoons, as well as the islets and coast.",
   price: 1320
 )
@@ -461,7 +461,7 @@ lion.photo.attach(io: act36, filename: '', content_type: 'image/jpg')
 pouce = Activity.create(
   category_id: nature.id,
   name: "Hiking Trip - Le Pouce Mountain",
-  address: "Petit Verger, St Pierre, Mauritius",
+  address: "Le Pouce Mountain, Mauritius",
   description: "Le Pouce - This mountain is the third highest in Mauritius, peaking at 812m, is located in the North West of the island between the Pieter Both and the Signal mountain. Le Pouce is known as ‘The Thumb’ peak. The first person to climb Le Pouce is accredited as Charles Darwin.",
   price: 1800
 )
@@ -470,7 +470,7 @@ pouce.photo.attach(io: act37, filename: '', content_type: 'image/jpg')
 hike_morne = Activity.create(
   category_id: nature.id,
   name: "Hiking Trip - Le Morne Brabant",
-  address: "Le Morne, Mauritius",
+  address: "Le Morne Brabant, Le Morne, Mauritius",
   description: "Hiking on the path of the runaway slaves at Le Morne Brabant has to definitely be among the top things to do while staying in Mauritius.",
   price: 1960
 )
@@ -479,7 +479,7 @@ hike_morne.photo.attach(io: act38, filename: '', content_type: 'image/jpg')
 hike_tamarind = Activity.create(
   category_id: nature.id,
   name: "Hiking Trip - Tamarind Falls(7 Cascades)",
-  address: "Henrietta, Mauritius",
+  address: "Tamarind Falls, Henrietta, Mauritius",
   description: "This half day hiking trip at the Tamarind Falls is best known as “a short and easy hike to discover the high part of the 7 waterfalls.
   Enjoy Hiking to Tamarind Falls with its breathtaking views of mountains, rivers, forests and waterfalls, discovering a magnificent nature-paradise.",
   price: 1970
@@ -489,7 +489,7 @@ hike_tamarind.photo.attach(io: act39, filename: '', content_type: 'image/jpg')
 hike_chamarel = Activity.create(
   category_id: nature.id,
   name: "Hiking Trip - Chamarel Waterfall",
-  address: "Chamarel, Mauritius",
+  address: "Chamarel Waterfall, Chamarel, Mauritius",
   description: "Uncover the immaculate beauty of the island as you descend into a secret valley in the south of Mauritius and follow the unique sights and sounds of the river as you make your way to the base of the Chamarel Falls.",
   price: 2000
 )
@@ -564,7 +564,7 @@ kite_surf.photo.attach(io: act47, filename: '', content_type: 'image/jpg')
 canyon = Activity.create(
   category_id: adrenaline.id,
   name: "Canyoning Excursion - Tamarind Falls(7 Cascades)",
-  address: "Henrietta, Mauritius",
+  address: "Tamarind Falls, Henrietta, Mauritius",
   description: "The canyoning excursion is offered at the Tamarind Falls which constitute a scenic attraction of the South West of Mauritius.
   This is one of the most beautiful and calmest places in Mauritius, and one of the best places for nature and animal lovers, where one can find many exotic plants and birds.",
   price: 3000
