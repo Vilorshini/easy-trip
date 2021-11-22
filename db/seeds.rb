@@ -207,7 +207,7 @@ pirate.photo.attach(io: act8, filename: '', content_type: 'image/jpg')
 aapravasi = Activity.create(
   category_id: culture.id,
   name: "Aapravasi Ghat",
-  address: "RGR3+J6J Ex-DWC Building, 1 Quay St, Port Louis",
+  address: "RGR3+J6J Ex-DWC Building, 1 Quay Street, Port Louis",
   description: "Earning itself a spot in the list of UNESCO World Heritage Sites.In the present time, Aapravasi Ghat is proof to this major history of indentured labor that took place during British Rule.",
   price: 0
 )
@@ -261,7 +261,7 @@ chateau.photo.attach(io: act14, filename: '', content_type: 'image/jpg')
 glass = Activity.create(
   category_id: arts.id,
   name: "The Mauritius Glass Gallery",
-  address: "129 John Kennedy Ave, Vacoas-Phoenix",
+  address: "129 John Kennedy Avenue, Vacoas-Phoenix",
   description: "At the Mauritius Glass Gallery you will see skilful craftsmen setting their creativity free and bringing back to life used bottles and other glass elements. You will also familiarize yourself with the traditional and centuries’ old techniques of glass blowing in the especially dedicated demonstration area.",
   price: 0
 )
@@ -270,7 +270,7 @@ glass.photo.attach(io: act15, filename: '', content_type: 'image/jpg')
 craft = Activity.create(
   category_id: arts.id,
   name: "Le Craft Market",
-  address: "Port louis caudan",
+  address: "Caudan Waterfront, Marine Quay, Caudan, Port Louis",
   description: "As the name suggests, this market hosts around 36 stalls which hosts some of the best and unique craft collections which also makes this one of the best Mauritius tourist places. Starting off from the exquisite woodwork to the intricately detailed baskets and also some of the most amazing glass souvenirs. Alongside that this two-storey building is also known for selling some of the most artistic things like seashells and conch items. People can also find boxes of some of the ground spices and embroidered linen catch.",
   price: 0
 )
@@ -279,7 +279,7 @@ craft.photo.attach(io: act16, filename: '', content_type: 'image/jpg')
 blue_penny = Activity.create(
   category_id: arts.id,
   name: "Blue Penny Museum",
-  address: "Dans Caudan Water Front, Port Louis",
+  address: "Caudan Waterfront, Marine Quay, Caudan, Port Louis",
   description: "Yet another treat for the history lovers. If you want an alluring view of the art and history of Mauritius and want to go into the depths of the country, this place is a must-stop. The Blue Penny Museum is a place just out of your wish list. From a plethora of magnificent explorations around the island, this specific museum does showcase it all. The museum provides you with insight and a quick rundown of everything Mauritius is and how it evolved gradually over the course of years. Start with an overview of the three colonial periods - Dutch, French, and British, and move on to the history of the postal service of Mauritius. From its very first stamp to the rarest and world-renowned stamps, the museum houses many interesting things.",
   price: 250
 )
@@ -307,7 +307,7 @@ parasail = Activity.create(
   category_id: sea.id,
   name: "Parasailing",
   address: "Grand Baie, Trou d’eau Douce, and Ile aux Cerfs",
-  description: "Parasailing is one of the best water sports in Mauritius. t not just gives you a bird’s-eye view of the lagoons, but also an unmatched thrill. This is the best place to lose yourself in the magnificent turquoise waters and their vastness.",
+  description: "Parasailing is one of the best water sports in Mauritius. It not just gives you a bird’s-eye view of the lagoons, but also an unmatched thrill. This is the best place to lose yourself in the magnificent turquoise waters and their vastness.",
   price: 250
 )
 parasail.photo.attach(io: act20, filename: '', content_type: 'image/jpg')
@@ -315,8 +315,8 @@ parasail.photo.attach(io: act20, filename: '', content_type: 'image/jpg')
 kayak = Activity.create(
   category_id: sea.id,
   name: "Cave Sea Kayaking",
-  address: "The Cliffs of Albion in the Mauritius West Coast; starting point is Pointe Aux Sable.",
-  description:"kayaking allows you to explore mysterious islands and caves. You can opt for a single kayak or a double kayak. The best part is that you can discover a lot more on your own.If starting from Pointe Aux Sable, paddle through the water and discover the gorgeous basalt rock gardens while entering in the stunning rock caves. You will be left spellbound with the beautiful sights you witness on this journey.",
+  address: "B31, Port Louis",
+  description:"Kayaking allows you to explore mysterious islands and caves. You can opt for a single kayak or a double kayak. The best part is that you can discover a lot more on your own.If starting from Pointe Aux Sable, paddle through the water and discover the gorgeous basalt rock gardens while entering in the stunning rock caves. You will be left spellbound with the beautiful sights you witness on this journey.",
   price: 1000
 )
 kayak.photo.attach(io: act21, filename: '', content_type: 'image/jpg')
@@ -324,7 +324,7 @@ kayak.photo.attach(io: act21, filename: '', content_type: 'image/jpg')
 water_ski = Activity.create(
   category_id: sea.id,
   name: "Water Skiing",
-  address: "Trou d’eau Douce",
+  address: "B59, Trou d’eau Douce",
   description: "Water skiing in Mauritius is a wonderful sport to get an adrenaline rush. This high-octane sport seems a tad difficult at first, but soon it becomes a smooth sail. All you need to do is skim along the water’s surface, standing upright on skis holding a tow rope. Water-ski is best enjoyed where the water is calm. This water sport will need you to use a lot of energy, so keep your energy drinks handy.",
   price: 1500
 )
@@ -333,7 +333,7 @@ water_ski.photo.attach(io: act22, filename: '', content_type: 'image/jpg')
 wind_surf = Activity.create(
   category_id: sea.id,
   name: "Wind-surfing",
-  address: "Le Morne peninsula",
+  address: "Windsurf Lagoon, G8QC+4CH, Le Morne",
   description: "Windsurfing in Mauritius is exciting as well as challenging. Besides being fun, it’s a great form of workout and can burn upto 1000 calories per hour. That’s good for a sport, right?",
   price:1000
 )
@@ -342,7 +342,7 @@ wind_surf.photo.attach(io: act23, filename: '', content_type: 'image/jpg')
 submarine = Activity.create(
   category_id: sea.id,
   name: "Blue Safari Submarine",
-  address:  "Trou Aux Biches",
+  address:  "Blue Safari Submarines, Coastal Road, Trou Aux Biches",
   description: "Wish to dive, but don’t want to get wet? Try Blue Safari Submarine ride. It is a different one among Mauritius water sports, and takes you among the exotic corals and the ship-wreck ‘Star Hope’. Blue Safari Submarine will give you a whirlwind tour of the ocean. So, this like a aquarium but with a twist, as you are inside it!",
   price: 2000
 )
@@ -351,7 +351,7 @@ submarine.photo.attach(io: act24, filename: '', content_type: 'image/jpg')
 dolphin = Activity.create(
   category_id: sea.id,
   name: "Dolphin Spotting And Whale Watching",
-  address: "The coast of Tamarin",
+  address: "Dolphin Encounter Mauritius, Coastal Road Tamarin, Tamarin",
   description: "Dolphin spotting and whale watching in Mauritius definitely makes your trip unforgettable. It requires a bit of patience and hunting, but the result is priceless. Its a great feeling to witness the giants of the ocean, in their natural environment.",
   price: 2500
 )
@@ -360,7 +360,7 @@ dolphin.photo.attach(io: act25, filename: '', content_type: 'image/jpg')
 sea_walk = Activity.create(
   category_id: sea.id,
   name: "Underwater Sea Walk",
-  address: "Trou d’eau Douce",
+  address: "Ile Aux Cerfs Watersports, Royal Road La Pelouse, Trou d’eau Douce",
   description: "Try underwater sea walking if you want to explore the rich sea life. It might be little scary at the beginning, but it’s worth it. Compared to other water sports activities in Mauritius, this is gives you the best underwater experience. Going out on a walk on the sea floor can also be a romantic thing to do for sporty couples.",
   price: 2000
 )
@@ -369,7 +369,7 @@ sea_walk.photo.attach(io: act26, filename: '', content_type: 'image/jpg')
 dive = Activity.create(
   category_id: sea.id,
   name: "Scuba Diving",
-  address: "Roche Zozo located off Blue Bay on the southern coast of Mauritius.",
+  address: "Coral Diving Center Blue Bay, Blue Bay",
   description: "Enjoy the colorful marine life and the peaceful silence of the sea as you dive into it.",
   price: 2000
 )
@@ -378,7 +378,7 @@ dive.photo.attach(io: act27, filename: '', content_type: 'image/jpg')
 aigrettes = Activity.create(
   category_id: eco.id,
   name: "Ile aux Aigrettes Nature Reserve Tour",
-  address: "Blue Bay Beach",
+  address: "Blue Bay NCG Road, Blue Bay",
   description:"This is a full-day tour in a private air-conditioned vehicle with a friendly driver, with the highlight being the Ile aux Aigrettes Nature Reserve. You will be treated to a guided 1.5 to 2 hour easy hike around the island where you will be able to discover the unique flora and fauna endemic to Mauritius. You will also have the chance to visit the white sandy beach, and have a dip in the beautiful lagoon, of Blue Bay and wander around the historical village of Mahébourg.",
   price: 4891
 )
