@@ -135,7 +135,7 @@ puts "Now creating all activities..."
 takamaka = Activity.create(
   category_id: food.id,
   name: "Wine Tasting at Takamaka Boutique Winery",
-  address: "Vacoas, Centre",
+  address: "Plaine Bonnefin, Mare aux Vacoas, Vacoas-Phoenix",
   description: "Your guided tour of the Takamaka Winery, the only winery in the world dedicated exclusively to lychee wine. A wine tasting session will allow you to sample a fine selection of exotic flavours and try delicious wines while learning about wine production from the owner himself.",
   price: 900
 )
@@ -144,7 +144,7 @@ takamaka = Activity.create(
 joliette = Activity.create(
   category_id: food.id,
   name: "Wine Tasting at La Joliette",
-  address: "Petite Riviere, West",
+  address: "La Joliette Industrial Zone, Petite Riviere",
   description: "La Joliette Winery welcomes you for a visit where you can taste new exciting and innovative experiences in the wine industry including the Tropical Island Fruit Wines. Whether you are just having your first sips of wine or you are a seasoned sommelier, you will get a complete wine experience during your visit at La Joliette.",
   price: 900
 )
@@ -153,7 +153,7 @@ joliette.photo.attach(io: act2, filename: '', content_type: 'image/jpg')
 street = Activity.create(
   category_id: food.id,
   name: "Port Louis Street Food Tour",
-  address: "Port Louis",
+  address: "Caudan Waterfront, Marine Quay, Caudan, Port Louis",
   description: "Your stay in Mauritius will not be complete if you miss out on street food, ranking in the world Top 10, according to The Telegraph! There are also original drinks that will refresh you and perfectly pair some of the food you will taste. There is the famous Mauritian tea, hot black tea with sugar and milk, the delicious Alouda, sweetened flavoured milk with tukmaria seeds and grated agar-agar jelly, the best are found in markets, and the various tamarind or lemongrass juices, and of course, the local beer and the limitless rum-based drinks evoking flavours of holidays!",
   price: 1500
 )
@@ -162,7 +162,8 @@ street.photo.attach(io: act3, filename: '', content_type: 'image/jpg')
 culinary = Activity.create(
   category_id: food.id,
   name: "Full-Day Culinary Experience with Local Chef",
-  address: "MokaWith the help of your native host, Chef Sandy, you will discover the BEST of Mauritian unique flavors and local cuisines while learning traditional ways of life. For a whole day, you will enjoy an authentic Mauritian experience.",
+  address: "Feast of Mauritius, 123 Avenue des Oies, Flic en Flac",
+  description: "With the help of your native host, Chef Sandy, you will discover the BEST of Mauritian unique flavors and local cuisines while learning traditional ways of life. For a whole day, you will enjoy an authentic Mauritian experience.",
   price: 2000
 )
 culinary.photo.attach(io: act4, filename: '', content_type: 'image/jpg')
@@ -170,7 +171,7 @@ culinary.photo.attach(io: act4, filename: '', content_type: 'image/jpg')
 dodoquest = Activity.create(
   category_id: team.id,
   name: "Room Escape Game at Dodoquest",
-  address: "Grand Bay, North",
+  address: "Dodo Quest, MGI Avenue, Moka",
   description: "The Dodoquest offers you a real situation of adventures, amusements, entertainment, and mind boggling puzzles to solve. Your family, co-workers or friends and you will enjoy an incredible adventure in Mauritius. The escape quest is inspired by unique scenarios of Mauritian colonial history and the experience offers you an extraordinary opportunity of being transfered into the past.",
   price: 1200
 )
@@ -179,7 +180,7 @@ dodoquest.photo.attach(io: act5, filename: '', content_type: 'image/jpg')
 laser = Activity.create(
   category_id: team.id,
   name: "Laser Tag Game",
-  address: "Quatre Bornes, Centre",
+  address: "Fun Zone, Willian Newton Avenue, Quatre Bornes",
   description: "The laser tag game can be played indoor, outdoor or at a public loaction. It is an ideal and exciting activity for team building with friends, family and co-workers and requires team strategy.",
   price: 900
 )
@@ -188,7 +189,7 @@ laser.photo.attach(io: act6, filename: '', content_type: 'image/jpg')
 treasure = Activity.create(
   category_id: team.id,
   name: "Treasure Hunt",
-  address: "Around the island",
+  address: "Pieter Both Vertical World, Pieter Both, Creve Coeur",
   description: "Each team consists of 4-5 people who must use brains and muscles to find the final treasure. A car will be provided to each team and the search may lead the teams to anywhere around the island. The only additional tool will be a smartphone.",
   price: 1500
 )
@@ -197,7 +198,7 @@ treasure.photo.attach(io: act7, filename: '', content_type: 'image/jpg')
 pirate = Activity.create(
   category_id: team.id,
   name: "Pirates of the East Hunt",
-  address: "East Coast",
+  address: "Belle Mare Public Beach, B59, Quatre Cocos, Flacq",
   description: "Pirates of the East is a fun and challenging modern pirates treasure hunt set in the lagoons of the east coast of Mauritius. Embark on a catamaran and become a ruthless and witty pirate for a day, if you survive the challenges.",
   price: 1100
 )
@@ -294,7 +295,7 @@ photography = Activity.create(
 photography.photo.attach(io: act18, filename: '', content_type: 'image/jpg')
 
 eureka = Activity.create(
-  category_id: arts.id, 
+  category_id: arts.id,
   name: "Eureka House",
   address: " Eureka Lane, Montagne Ory, Moka",
   description: "Built in 1830, Eureka House (Maison Eureka) is a major tourist attraction in Mauritius, located at Moka, Central Mauritius. This erstwhile colonial residence of English and French aristocrats has been converted into a museum dedicated to the colonial period of Mauritius. With its 109 doors and windows, it is famous as the largest house on the island. The museum has areas dedicated to music, art, maps, and Chinese & Indian houseware. Many small waterfalls, lush greenery, endemic plants, Lake Moka, and lavish gardens surround the museum.",
