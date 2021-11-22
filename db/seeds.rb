@@ -544,8 +544,7 @@ skydive = Activity.create(
   description: "A Skydiving Adrenaline Pumping Adventure at its absolute best! You will get to experience a 10,000ft skydive in Mauritius paradise island.",
   price: 12000
 )
-skydive.photo.attach(io: act46, filename: 'skydive_nyng2e.jpg', content_type: 'image/jpg')skydive_nyng2e.jpg
-
+skydive.photo.attach(io: act46, filename: 'skydive_nyng2e.jpg', content_type: 'image/jpg')
 kite_surf = Activity.create(
   category_id: adrenaline.id,
   name: "Kite Surfing Initiation",
