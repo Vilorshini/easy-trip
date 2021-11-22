@@ -1,6 +1,6 @@
 <div class="container mt-4">
         <div class="card book-head mb-3">
-          <%= link_to root_path, class: 'text-decoration-none' do %>
+          <%= link_to bookings_path, class: 'text-decoration-none' do %>
             <span class="back-btn"><i class="fas fa-chevron-left"></i></span>
           <% end %>
           <h4 class="text-center "> Your <%= @booking.activity.category.name %> Trip</h4>
@@ -37,10 +37,14 @@
 
         <% # Back and all bookings buttons %>
 
+        <%
+=begin%>
         <div class=" container mt-4 pl-0">
           <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
           <%= link_to "All Bookings", bookings_path, class: 'btn btn-primary btn-lg btn-custom' %>
-        </div>
+        </div> 
+<%
+=end%>
 
         <% #  Mapbox %>
 
