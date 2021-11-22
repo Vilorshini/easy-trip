@@ -1,5 +1,6 @@
 <div class="container mt-4">
         <h4> Your <%= @booking.activity.category.name %> Trip</h4>
+
         <div class="booking-details-card">
           <div class="card-icon">
             <% booking_category = @booking.activity.category.name%>
@@ -29,8 +30,19 @@
             <p><span>Total price: </span>Rs <%= ((@booking.activity.price).to_i) * @booking.number_of_participants.to_i %> </p>
           </div>
         </div>
+
+        <% # Back and all bookings buttons %>
+
         <div class=" container mt-4 pl-0">
           <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
           <%= link_to "All Bookings", bookings_path, class: 'btn btn-primary btn-lg btn-custom' %>
         </div>
+
+        <% #  Mapbox %>
+
+    <div id="map"
+      style="width: 100%; height: 600px;"
+      data-markers="<%= @markers.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
 </div>
