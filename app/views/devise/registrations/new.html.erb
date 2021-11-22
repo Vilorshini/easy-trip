@@ -1,6 +1,7 @@
-<div class='ml-4 mr-4 mt-4'>
+<div class='login-form mt-4'>
+<div class="login-form-title">
 <h2>Sign up</h2>
-
+</div>
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
@@ -27,9 +28,12 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up", class: 'btn btn-primary btn-md'%>
+    <%= f.button :submit, "Sign up", class: 'btn btn-primary btn-block'%>
+  </div>
+  <div class="login-form-links mt-2">
+  <p>Already have an account? </p><%= link_to "Log in", new_session_path(resource_name) %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
 </div>

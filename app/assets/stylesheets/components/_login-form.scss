@@ -1,0 +1,21 @@
+.login-form {
+  margin: 130px 35px;
+}
+
+.login-form-title {
+  display: flex;
+  justify-content: center;
+  // margin: 15px;
+}
+
+.login-form-links {
+  display: flex;
+  justify-content: center;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45px 0;
+}
