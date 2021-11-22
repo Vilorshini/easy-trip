@@ -143,7 +143,7 @@ takamaka = Activity.create(
 
 joliette = Activity.create(
   category_id: food.id,
-  name: "Wine Tasting at La Joliette",
+  name: "Wine Tasting at La Joliette Winery",
   address: "La Joliette Industrial Zone, Petite Riviere",
   description: "La Joliette Winery welcomes you for a visit where you can taste new exciting and innovative experiences in the wine industry including the Tropical Island Fruit Wines. Whether you are just having your first sips of wine or you are a seasoned sommelier, you will get a complete wine experience during your visit at La Joliette.",
   price: 900
@@ -333,7 +333,7 @@ water_ski.photo.attach(io: act22, filename: '', content_type: 'image/jpg')
 wind_surf = Activity.create(
   category_id: sea.id,
   name: "Wind-surfing",
-  address: "Windsurf Lagoon, G8QC+4CH, Le Morne",
+  address: "G8QC+4CH, Le Morne",
   description: "Windsurfing in Mauritius is exciting as well as challenging. Besides being fun, it’s a great form of workout and can burn upto 1000 calories per hour. That’s good for a sport, right?",
   price:1000
 )
@@ -415,9 +415,7 @@ ebony = Activity.create(
   category_id: eco.id,
   name: "Ebony Forest Discovery Tour",
   address: "90409, 7 Coloured Earth Road, Chamarel, Mauritius",
-  description: "Spend the day hiking and strolling along the trails & tracks or view the splendor of the Ebony Forest while cruising in a jeep.
-  As you make your way through the forest, you will get to admire the native fauna of Mauritius, such as fruit bats, swiftlets and tropicbirds soaring high along the mountains’ ridgeline.
-  If you are a keen bird watcher, you will be able to spot the endemic birds such as the Mauritius Paradise Flycatcher, Mauritian Black Bulbul and grey-white eyes.",
+  description: "Spend the day hiking and strolling along the trails & tracks or view the splendor of the Ebony Forest while cruising in a jeep. As you make your way through the forest, you will get to admire the native fauna of Mauritius, such as fruit bats, swiftlets and tropicbirds soaring high along the mountains’ ridgeline. If you are a keen bird watcher, you will be able to spot the endemic birds such as the Mauritius Paradise Flycatcher, Mauritian Black Bulbul and grey-white eyes.",
   price: 500
 )
 ebony.photo.attach(io: act32, filename: '', content_type: 'image/jpg')
@@ -480,8 +478,7 @@ hike_tamarind = Activity.create(
   category_id: nature.id,
   name: "Hiking Trip - Tamarind Falls(7 Cascades)",
   address: "Tamarind Falls, Henrietta, Mauritius",
-  description: "This half day hiking trip at the Tamarind Falls is best known as “a short and easy hike to discover the high part of the 7 waterfalls.
-  Enjoy Hiking to Tamarind Falls with its breathtaking views of mountains, rivers, forests and waterfalls, discovering a magnificent nature-paradise.",
+  description: "This half day hiking trip at the Tamarind Falls is best known as “a short and easy hike to discover the high part of the 7 waterfalls. Enjoy Hiking to Tamarind Falls with its breathtaking views of mountains, rivers, forests and waterfalls, discovering a magnificent nature-paradise.",
   price: 1970
 )
 hike_tamarind.photo.attach(io: act39, filename: '', content_type: 'image/jpg')
@@ -499,8 +496,7 @@ piton = Activity.create(
   category_id: nature.id,
   name: "Hiking Trip - Piton de La Petite Riviere Noire",
   address: "B103 - Plaine Champagne Road, Mauritius",
-  description: "Hiking trip to the Piton De La petite Riviere Noire - the highest mountain in Mauritius!
-  Experience the natural beauty of Mauritius from a different perspective from the highest peak of the island.",
+  description: "Hiking trip to the Piton De La petite Riviere Noire - the highest mountain in Mauritius! Experience the natural beauty of Mauritius from a different perspective from the highest peak of the island.",
   price: 2600
 )
 piton.photo.attach(io: act41, filename: '', content_type: 'image/jpg')
@@ -545,8 +541,7 @@ skydive = Activity.create(
   category_id: adrenaline.id,
   name: "Skydive - Tandem Skydiving",
   address: "Airstrip, Skydive Road Z.I MU, Riviere du Rempart 30107",
-  description: "A Skydiving Adrenaline Pumping Adventure at its absolute best!
-  You will get to experience a 10,000ft skydive in Mauritius paradise island.",
+  description: "A Skydiving Adrenaline Pumping Adventure at its absolute best! You will get to experience a 10,000ft skydive in Mauritius paradise island.",
   price: 12000
 )
 skydive.photo.attach(io: act46, filename: '', content_type: 'image/jpg')
@@ -555,8 +550,7 @@ kite_surf = Activity.create(
   category_id: adrenaline.id,
   name: "Kite Surfing Initiation",
   address: "Le Morne Public Beach, Mauritius",
-  description: "Are you looking to learn kitesurfing or perhaps try this great activity in one of the leading world kitesurfing destinations?
-  We offer you the best kite-surfing packages in Mauritius offered at Le Morne- a top ranked and world renowned kitesurfing spot.",
+  description: "Are you looking to learn kitesurfing or perhaps try this great activity in one of the leading world kitesurfing destinations? We offer you the best kite-surfing packages in Mauritius offered at Le Morne- a top ranked and world renowned kitesurfing spot.",
   price: 3000
 )
 kite_surf.photo.attach(io: act47, filename: '', content_type: 'image/jpg')
@@ -565,8 +559,7 @@ canyon = Activity.create(
   category_id: adrenaline.id,
   name: "Canyoning Excursion - Tamarind Falls(7 Cascades)",
   address: "Tamarind Falls, Henrietta, Mauritius",
-  description: "The canyoning excursion is offered at the Tamarind Falls which constitute a scenic attraction of the South West of Mauritius.
-  This is one of the most beautiful and calmest places in Mauritius, and one of the best places for nature and animal lovers, where one can find many exotic plants and birds.",
+  description: "The canyoning excursion is offered at the Tamarind Falls which constitute a scenic attraction of the South West of Mauritius. This is one of the most beautiful and calmest places in Mauritius, and one of the best places for nature and animal lovers, where one can find many exotic plants and birds.",
   price: 3000
 )
 canyon.photo.attach(io: act48, filename: '', content_type: 'image/jpg')
