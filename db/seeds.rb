@@ -387,8 +387,8 @@ aigrettes.photo.attach(io: act28, filename: '', content_type: 'image/jpg')
 exotic = Activity.create(
   category_id: eco.id,
   name: "Exotic South: A Journey into the Nature",
-  address: "Grand Baie",
-  description: "In this tour, you will explore the exotic south-west of Mauritius on this 8 hours Nature tour.With your certified guide, you will be able to visit some of the highlights and beautiful places of the South-West of the paradise island.",
+  address: "Blue Bay NCG Road",
+  description: "In this tour, you will explore the exotic south-west of Mauritius on this 8 hours Nature tour. With your certified guide, you will be able to visit some of the highlights and beautiful places of the South-West of the paradise island.",
   price: 5474
 )
 exotic.photo.attach(io: act29, filename: '', content_type: 'image/jpg')
@@ -405,7 +405,7 @@ perma.photo.attach(io: act30, filename: '', content_type: 'image/jpg')
 rum = Activity.create(
   category_id: food.id,
   name: "Rum Tasting at Rhumerie de Chamarel",
-  address: "Chamarel, South West",
+  address: "H9CW+RGG, Chamarel",
   description: "Enjoy a tour and a unique rum tasting session where you can try a selection of agricultural rums produced by the distillery. Displaying a special sense of warmth and authenticity, the Rhumerie de Chamarel welcomes visitors for an all-encompassing tourism experience ranging from a guided visit of the distillery and rum tasting to a tasty meal at L'Alchimiste, its own stylish and creative restaurant.",
   price: 1200
 )
