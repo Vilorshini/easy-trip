@@ -8,7 +8,7 @@
 
         <%= link_to category_booking_path(booking.activity.category, booking), class: 'text-decoration-none' do %>
             <div class="card-trip">
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="" />
+              <%= cl_image_tag booking.activity.photo.key, height: 300, crop: :fill %>
               <div class="card-trip-details">
                 <div>
                   <h2> Activity details</h2>
@@ -48,7 +48,7 @@
               <% end %>
               <% # End of If statements for all category icons%>
 
-                <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" class="card-blur" />
+                <%= cl_image_tag booking.activity.photo.key, height: 300, class:"card-blur", crop: :fill %>
                 <div class="card-trip-details card-blur">
                   <div>
                     <h2> Activity details</h2>
