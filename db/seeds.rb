@@ -78,7 +78,7 @@ puts 'All Categories have been created successfully ! 😎'
 
 # Category cloudinary images links
 
-act1 = URI.open('')
+act1 = URI.open('https://res.cloudinary.com/dzztftpku/image/upload/v1637586036/easy%20trip%20-%20activities%20img/takamaka_dokt8c.jpg')
 act2 = URI.open('')
 act3 = URI.open('')
 act4 = URI.open('')
@@ -139,7 +139,7 @@ takamaka = Activity.create(
   description: "Your guided tour of the Takamaka Winery, the only winery in the world dedicated exclusively to lychee wine. A wine tasting session will allow you to sample a fine selection of exotic flavours and try delicious wines while learning about wine production from the owner himself.",
   price: 900
 )
-takamaka.photo.attach(io: act1, filename: '', content_type: 'image/jpg')
+takamaka.photo.attach(io: act1, filename: 'takamaka_dokt8c.jpg', content_type: 'image/jpg')
 
 joliette = Activity.create(
   category_id: food.id,
