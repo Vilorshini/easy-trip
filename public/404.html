@@ -9,16 +9,29 @@
     color: #2E2F30;
     text-align: center;
     font-family: arial, sans-serif;
-    margin-top: 15%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .border {
+    border: #B00100 solid 4px;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 1);
+    width: 60%;
+    border-radius: 6px;
+  }
+
+  body h1{
+    font-size: 40px;
   }
   </style>
 </head>
 
 <body>
   <!-- This file lives in public/404.html -->
-  <div>
-    
-      <h1>The page you were looking for doesn't exist.</h1>
+  <div class="border">
+      <h1>404</h1>
+      <h2>The page you were looking for doesn't exist.</h2>
       <p>You may have mistyped the address or the page may have moved.</p>
     
     <p>If you are the application owner check the logs for more information.</p>
