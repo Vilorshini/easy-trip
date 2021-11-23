@@ -31,9 +31,11 @@
             <h2>Reviews</h2>
             <% @reviews.each do |review| %>
                 <div class="notification">
-                <% if review.user.photo.attached? %>
-                 <%= cl_image_tag review.user.photo.key, class: "avatar-large" %>
-                 <%end %>
+                  <% if review.user.photo.attached? %>
+                    <%= cl_image_tag review.user.photo.key, class: "avatar-large" %>
+                  <% else %>
+                    <%= image_tag 'user.svg', class: "avatar-large" %>
+                  <%end %>
 
                     <div class="notification-content">
                         <p>

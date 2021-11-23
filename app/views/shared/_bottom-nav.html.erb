@@ -28,7 +28,11 @@
 
                 <% if user_signed_in? %>
                 <li class="list nav-item dropdown user-li">
-                    <%= image_tag "https://kitt.lewagon.com/placeholder/users/chrisgeek07", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+                    <% if current_user.photo.attached? %>
+                        <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+                    <% else %>
+                        <%= image_tag "user.svg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+                    <% end %>
                     <div class="dropdown-menu dropdown-menu-right user-drop" aria-labelledby="navbarDropdown">
                         <%= link_to "My Bookings", bookings_path, class: "dropdown-item" %>
                         <%= link_to "", "#", class: "dropdown-item" %>
