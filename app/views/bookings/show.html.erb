@@ -1,5 +1,10 @@
 <div class="container mt-4">
-        <h4> Your <%= @booking.activity.category.name %> Trip</h4>
+        <div class="card book-head mb-3">
+          <%= link_to bookings_path, class: 'text-decoration-none' do %>
+            <span class="back-btn"><i class="fas fa-chevron-left"></i></span>
+          <% end %>
+          <h4 class="text-center "> Your <%= @booking.activity.category.name %> Trip</h4>
+        </div>
         <div class="booking-details-card">
           <div class="card-icon">
             <% booking_category = @booking.activity.category.name%>
@@ -23,14 +28,33 @@
             <% end %>
           </div>
 
-          <div class="booking-details-card-infos">
+          <div class="booking-details-card-infos" id="activity" data-activity="<%= @booking.activity_date %>">
             <p><span>Booked for: </span> <%= @booking.activity_date %></p>
             <p><span>Number of participants: </span> <%= (@booking.number_of_participants) %></p>
             <p><span>Total price: </span>Rs <%= ((@booking.activity.price).to_i) * @booking.number_of_participants.to_i %> </p>
           </div>
         </div>
+
+        <% # Back and all bookings buttons %>
+
+        <%
+=begin%>
         <div class=" container mt-4 pl-0">
           <%= link_to "Back", root_path, class: 'btn btn-primary btn-lg btn-custom' %>
           <%= link_to "All Bookings", bookings_path, class: 'btn btn-primary btn-lg btn-custom' %>
-        </div>
+        </div> 
+<%
+=end%>
+
+        <% #  Mapbox %>
+
+    <div id="map"
+      style="width: 100%; height: 100vh;"
+
+      <% if Date.today >= (@booking.activity_date - 1) %>
+       data-markers="<%= @markers.to_json %>"
+      <% end %>
+
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
 </div>
