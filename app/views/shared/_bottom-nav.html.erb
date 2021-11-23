@@ -26,16 +26,6 @@
                     <% end %>
                 </li>
 
-                <%
-=begin%>
- <li class="list" data-color="#ffa801">
-                  <%= link_to about_path, class: "" do %>
-                      <span class="icon"><i class="far fa-user"></i></span>
-                    <% end %>
-                </li> 
-<%
-=end%>
-
                 <% if user_signed_in? %>
                 <li class="list nav-item dropdown user-li">
                     <%= image_tag "https://kitt.lewagon.com/placeholder/users/chrisgeek07", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
