@@ -21,14 +21,14 @@ cat6 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224693/d
 cat7 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224662/development/food_cgwxhw.jpg')
 cat8 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224666/development/team_rkydyp.jpg')
 
-puts "Creating users avatar ..."
+puts "Creating users all users"
 
 bhavna = User.create(email: "bhavna@test.com", password: "password")
-photo1 = URI.open("https://kitt.lewagon.com/placeholder/users/Bhav16")
+photo1 = URI.open("https://avatars.githubusercontent.com/Bhav16")
 bhavna.photo.attach(io: photo1, filename: 'user1', content_type: 'image/jpg')
 
 vilorshini = User.create(email: "vilor@test.com", password: "password")
-photo2 = URI.open("https://avatars.githubusercontent.com/u/89873577?v=4")
+photo2 = URI.open("https://avatars.githubusercontent.com/Vilorshini")
 vilorshini.photo.attach(io: photo2, filename: 'user2', content_type: 'image/jpg')
 
 christian = User.create(email: "chris@test.com", password: "password")
@@ -39,7 +39,7 @@ julie = User.create(email: "julie@test.com", password: "password")
 photo4 = URI.open("https://kitt.lewagon.com/placeholder/users/jul817")
 julie.photo.attach(io: photo4, filename: 'user4', content_type: 'image/jpg')
 
-puts "successfully created all users"
+puts "All users have been succesfully created !"
 
 
 puts "Now creating all categories..."
