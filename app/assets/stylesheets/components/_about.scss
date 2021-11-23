@@ -1,9 +1,9 @@
 .banner {
   width: 100%;
-  height: 450px;
+  height: 350px;
   background-size: cover;
   background-position-x: right;
-  padding: 150px 0;
+  padding: 75px 0;
 }
 
 .banner h1 {
@@ -22,7 +22,7 @@
 }
 
 .about-section {
-  padding: 30px;
+  padding: 80px 30px;
   background-color: grey;
   color: white;
   margin: 30px 10px 0px 10px;
@@ -36,7 +36,7 @@
 .links {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .links a {
   color: #f1f1f1;

@@ -29,11 +29,14 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 
 import { initMapbox } from '../plugins/init_mapbox';
 
+import { initNavbar } from '../plugins/init_navbar';
+
 
 
 document.addEventListener('turbolinks:load', () => {
   // Mapbox func
   initMapbox();
+  initNavbar();
 
   initSweetalert('#booking-link', {
   title: "Congratulations!",
