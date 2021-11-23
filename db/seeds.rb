@@ -6,6 +6,14 @@ puts "Cleaning all activities 😴"
   Activity.destroy_all
 puts "All activities DB have been cleaned 🥳"
 
+puts "Cleaning all reviews.. "
+    Review.destroy_all
+puts "All reviews have been cleaned 🥳"
+
+puts "Cleaning all users.. "
+    User.destroy_all
+puts "All reviews have been cleaned 🥳"
+
 puts "Cleaning all categories 😴"
   Category.destroy_all
 puts "All categories DB have been cleaned 🥳"
@@ -32,8 +40,8 @@ photo2 = URI.open("https://avatars.githubusercontent.com/Vilorshini")
 vilorshini.photo.attach(io: photo2, filename: 'user2', content_type: 'image/jpg')
 
 christian = User.create(email: "chris@test.com", password: "password")
-photo3 = URI.open("https://kitt.lewagon.com/placeholder/users/chrisgeek07")
-christian.photo.attach(io: photo3, filename: 'user3', content_type: 'image/jpg')
+photo3 =URI.open("https://res.cloudinary.com/dcz8avk6a/image/upload/v1637671557/development/chris_viemmq.png")
+christian.photo.attach(io: photo3, filename: 'chris_viemmq.png', content_type: 'image/png')
 
 julie = User.create(email: "julie@test.com", password: "password")
 photo4 = URI.open("https://kitt.lewagon.com/placeholder/users/jul817")
