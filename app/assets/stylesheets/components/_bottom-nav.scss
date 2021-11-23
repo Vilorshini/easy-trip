@@ -5,13 +5,10 @@
     box-sizing: border-box;
   }
   body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     min-height: 100vh;
     transition: 0.5s;
     background-color: #f7f7f7;
-    margin-top: -30px;
+
   }
   .navigation {
     position: relative;
@@ -20,6 +17,13 @@
     border-radius: 40px;
     background-color: #fff;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .nav-container {
+    position: fixed;
+    bottom: 20px;
+    z-index: 5;
   }
   
   .navigation ul {
