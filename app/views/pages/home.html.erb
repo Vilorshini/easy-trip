@@ -17,7 +17,7 @@
 </div>
 
 <div class='container py-4'>
-  
+
   <div class="show-card">
     <h3 class="">Not sure which activity to pick?</h3>
     <%= link_to "Learn more", about_path, class: 'btn btn-flat my-3'  %>
@@ -31,7 +31,10 @@
             <h2>Reviews</h2>
             <% @reviews.each do |review| %>
                 <div class="notification">
-                    <img src='https://kitt.lewagon.com/placeholder/users/chrisgeek07' class="avatar-large"/>
+                <% if review.user.photo.attached? %>
+                 <%= cl_image_tag review.user.photo.key, class: "avatar-large" %>
+                 <%end %>
+
                     <div class="notification-content">
                         <p>
                         <% if review.rating %>
