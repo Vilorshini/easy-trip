@@ -8,7 +8,6 @@
     min-height: 100vh;
     transition: 0.5s;
     background-color: #f7f7f7;
-
   }
   .navigation {
     position: relative;
@@ -48,6 +47,19 @@
     width: 100%;
     text-align: center;
     color: #333;
+    opacity: 1;
+    font-weight: 500;
+  }
+
+  .navigation ul li .avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    opacity: 1;
     font-weight: 500;
   }
   .navigation ul li a .icon {
