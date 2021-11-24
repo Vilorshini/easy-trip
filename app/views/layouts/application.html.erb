@@ -35,6 +35,9 @@
     
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+
+    <!-- iOS PWA links partial -->
+    <%= render 'shared/ios_pwa_links' %>
   </head>
 
   <body>
@@ -44,7 +47,7 @@
     <%= render 'shared/flashes' %>
 
     <%= yield %>
-
+    
     <%= render 'shared/bottom-nav' %>
   </body>
 </html>
