@@ -27,7 +27,7 @@ cat4 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224661/d
 cat5 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224715/development/nature_clnkai.jpg')
 cat6 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224693/development/adrenaline_t7lhoy.jpg')
 cat7 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224662/development/food_cgwxhw.jpg')
-cat8 = URI.open('https://res.cloudinary.com/dcz8avk6a/image/upload/v1637224666/development/team_rkydyp.jpg')
+cat8 = URI.open('https://res.cloudinary.com/dpchxqemy/image/upload/v1637731926/development/team4_mbtv2x.jpg')
 
 puts "Creating users all users"
 
@@ -99,7 +99,7 @@ team = Category.create(
     name: 'Team Activities',
     description: 'You want some fun with your friends or family?! Book now and experience some amazing emotional adventures with them!'
 )
-team.photo.attach(io: cat8, filename: 'team_rkydyp.jpg', content_type: 'image/jpg')
+team.photo.attach(io: cat8, filename: 'team4_mbtv2x.jpg', content_type: 'image/jpg')
 
 puts 'All Categories have been created successfully ! 😎'
 
