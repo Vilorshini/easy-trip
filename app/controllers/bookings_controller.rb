@@ -11,7 +11,7 @@ class BookingsController < ApplicationController
       {
         lat: @booking.activity.latitude,
         lng: @booking.activity.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { activity: activity })
+        info_window: render_to_string(partial: "info_window", locals: { activity: @booking.activity })
       }
     ]
   end

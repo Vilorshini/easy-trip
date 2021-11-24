@@ -1,2 +1,7 @@
-<h2><%= @booking.activity.name %></h2>
-<p><%= @booking.activity.address %></p>
+<div class="card info-card">
+  <img src="<%= cl_image_path @booking.activity.photo.key, height: 300, crop: :fill %>" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5><%= @booking.activity.name %></h5>
+        <p><%= @booking.activity.address %></p>
+    </div>
+</div>
