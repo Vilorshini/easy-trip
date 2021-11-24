@@ -8,6 +8,7 @@
 }
 
 .act-head {
+  background: transparent;
   border-radius: 30px;
   font-size: 16px;
   position: relative;
@@ -16,8 +17,8 @@
 }
 
 .act-back-btn {
-  font-size: 25px;
-  color: #333;
+  font-size: 24px;
+  color: #696969;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -26,6 +27,7 @@
 
 .act-head h2 {
   margin: 0;
+  font-size: 24px;
 }
 
 .card-trip > img {
