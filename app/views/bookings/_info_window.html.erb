@@ -1,0 +1,7 @@
+<div class="card info-card">
+  <img src="<%= cl_image_path @booking.activity.photo.key, height: 200, crop: :fill %>" class="card-img-top" alt="...">
+    <div class="card-body info-card-body">
+        <h5><%= @booking.activity.name %></h5>
+        <p><%= @booking.activity.address %></p>
+    </div>
+</div>
