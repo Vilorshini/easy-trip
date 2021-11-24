@@ -8,7 +8,12 @@
 }
 
 .info-card {
+  border-radius: 10px;
+  
+}
 
+.info-card-body {
+  padding: 10px;
 }
 
 .mapboxgl-popup {
@@ -16,7 +21,19 @@
   border-radius: 10px;
 }
 
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
 .mapboxgl-popup-content {
   text-align: center;
+  padding: 0;
+  width: 200px;
   border-radius: 10px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  border-radius: 10px;
+  padding: 1%;
+  border: none !important;
 }
