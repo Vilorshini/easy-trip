@@ -23,8 +23,8 @@
 
 .about-section {
   padding: 80px 30px;
-  background-color: grey;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: $gray;
   margin: 30px 10px 0px 10px;
   border-radius: 30px 30px 0 0;
 }
@@ -39,7 +39,7 @@
   margin-bottom: 20px;
 }
 .links a {
-  color: #f1f1f1;
+  color: $gray;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
