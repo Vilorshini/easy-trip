@@ -7,6 +7,27 @@
   position: relative;
 }
 
+.act-head {
+  border-radius: 30px;
+  font-size: 16px;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.act-back-btn {
+  font-size: 25px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+}
+
+.act-head h2 {
+  margin: 0;
+}
+
 .card-trip > img {
   height: 200px;
   width: 100%;
