@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .booking-details-card img {
@@ -51,6 +53,7 @@
   position: relative;
   padding: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 2;
 }
 
 .head-container {
