@@ -46,7 +46,7 @@
   padding: 8px 24px;
   border-radius: 4px;
   background: $blue;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 1px;
@@ -55,4 +55,5 @@
 .button:hover {
   color: white;
   text-decoration: none;
+  transform: scale(0.9);
 }
