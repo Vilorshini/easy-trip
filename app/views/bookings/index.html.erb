@@ -4,7 +4,7 @@
     <%= link_to root_path, class: 'text-decoration-none' do %>
         <span class="act-back-btn"><i class="fas fa-chevron-left"></i></span>
     <% end %>
-    <h2 class="text-center">Your activities</h2>
+    <h4 class="text-center">Your activities</h4>
   </div>
 
     <% @bookings.each do |booking| %>
@@ -54,7 +54,7 @@
                 <% end %>
                 <% # End of If statements for all category icons%>
 
-                  <%= cl_image_tag booking.activity.photo.key, height: 300, class:"card-blur", crop: :fill %>
+                  <%= cl_image_tag booking.activity.photo.key, height: 300, class:"card-blur-img", crop: :fill %>
                   <div class="card-trip-details card-blur">
                     <div>
                       <h2> Activity details</h2>
