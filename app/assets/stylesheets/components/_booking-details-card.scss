@@ -76,6 +76,18 @@
   transform: translate(0, -50%);
 }
 
+.booking-msg {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffffffb1;
+}
+
+.booking-msg p {
+  margin: 0;
+}
+
 
 .card-icon .fa-seedling {
   color: $green;
