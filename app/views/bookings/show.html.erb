@@ -42,9 +42,11 @@
           </div>
         </div>
 
-        <div class="booking-msg mt-3">
-          <p>Be patient the location of your activity will be revealed soon..</p>
-        </div>
+        <% if Date.today < (@booking.activity_date - 1) %>
+          <div class="booking-msg mt-3">
+            <p>Be patient the location of your activity will be revealed soon...</p>
+          </div>
+        <% end %>
 
 
         <% #  Mapbox %>
