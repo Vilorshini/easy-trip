@@ -54,7 +54,7 @@
                 <% end %>
                 <% # End of If statements for all category icons%>
 
-                <p class="count">To be revealed in 2 Days</p>
+                <p class="count">To be revealed in <%= (booking.activity_date - Date.today).to_i %> Days</p>
 
                   <%= cl_image_tag booking.activity.photo.key, height: 300, class:"card-blur-img", crop: :fill %>
                   <div class="card-trip-details card-blur">
