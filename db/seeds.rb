@@ -531,7 +531,7 @@ piton.photo.attach(io: act41, filename: 'piton_f5snwn.jpg', content_type: 'image
 
 zip_couleur = Activity.create(
   category_id: adrenaline.id,
-  name: "500m Zip line ",
+  name: "500m Zip line",
   address: "B102, Chamouny, Mauritius",
   description: "Get ready for a once in a lifetime zip line adventure. Where adrenaline rush is guaranteed! It is an activity for the brave heart, as you will entwine yourself at great heights riding the zip line in the Indian Ocean of over 500m in length.",
   price: 1650
@@ -601,4 +601,4 @@ tea = Activity.create(
 )
 tea.photo.attach(io: act49, filename: 'tea_sckhei.jpg', content_type: 'image/jpg')
 
-puts 'I know it was quite long this time, but all activities have been created successfully ! 😎'
+puts 'I know it was quite long this time, but all activities have been created successfully! 😎'
