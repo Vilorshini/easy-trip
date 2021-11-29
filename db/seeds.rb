@@ -468,7 +468,7 @@ zip_casela.photo.attach(io: act34, filename: 'zip_casela_rcoefb.jpg', content_ty
 
 segway = Activity.create(
   category_id: nature.id,
-  name: "Cascavelle, Mauritius",
+  name: "Mauritius Segway Safari Trip",
   address: "Cascavelle, Mauritius",
   description: "Enjoy a 1 hour trip on a Segway at the 4,500 hectares of the Mauritius' Yemen natural reserve park, situated on the South West of Mauritius and known as the Safari of Mauritius.",
   price: 1160
