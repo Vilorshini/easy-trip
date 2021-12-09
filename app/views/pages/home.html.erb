@@ -2,10 +2,11 @@
 <div class='container'>
   <h2 class="my-4">All Categories</h2>
 
-  <div class='row d-flex justify-content-between align-items-center cat-wrapper'>
+<div class='row d-flex justify-content-between align-items-center cat-wrapper'>
     <% @categories.each do |category| %>
       <div class="col-12 cat-item">
         <%= link_to category_path(category), class: 'text-decoration-none' do %>
+          <div class="card-category mb-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path category.photo.key, height: 300, crop: :fill %>')">
             <%= category.name %>
           </div>
         <% end %>
@@ -31,6 +32,7 @@
             <% @reviews.each do |review| %>
                 <div class="notification">
                   <% if review.user.photo.attached? %>
+                    <%= cl_image_tag review.user.photo.key, class: "avatar-large" %>
                   <% else %>
                     <%= image_tag 'user.svg', class: "avatar-large" %>
                   <%end %>
